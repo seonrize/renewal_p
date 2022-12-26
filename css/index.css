@@ -1,1 +1,69 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.intro {
+  width: 40%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: imgSize;
+          animation-name: imgSize;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+}
+
+.intro img {
+  width: 100%;
+}
+
+@-webkit-keyframes imgSize {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    left: 50%;
+    top: 50%;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.05);
+    left: 6.25rem;
+    top: 3.125rem;
+  }
+}
+
+@keyframes imgSize {
+  0% {
+    transform: translate(-50%, -50%) scale(0.5);
+    left: 50%;
+    top: 50%;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.05);
+    left: 6.25rem;
+    top: 3.125rem;
+  }
+}/*# sourceMappingURL=index.css.map */
