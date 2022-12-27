@@ -1,3 +1,12 @@
+* {
+  box-sizing: content-box;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 body {
   background-color: black;
 }
@@ -19,8 +28,20 @@ body section .title01 button {
   background-color: transparent;
   font-weight: bold;
 }
+body section .title01 button:hover {
+  color: #AC0A00;
+}
 body section .pop-up {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
   display: none;
+}
+body section .pop-up article {
   left: 50%;
   transform: translateX(-50%);
   width: 80vw;
@@ -31,14 +52,15 @@ body section .pop-up {
   padding: 20px;
   position: absolute;
 }
-body section .pop-up button {
+body section .pop-up article button {
   position: absolute;
-  padding: 15px;
+  padding: 20px;
+  top: 20px;
   right: 20px;
   border-style: none;
   background-color: transparent;
-  font-size: 20px;
-  color: darkred;
+  font-size: 30px;
+  color: #AC0A00;
   font-weight: bold;
   cursor: pointer;
 }
@@ -47,6 +69,9 @@ body section .pop-up.active {
 }
 body section .floor {
   padding: 20px;
+}
+body section .floor a {
+  padding: 30px;
 }
 body section .floor .f {
   padding: 20px;
@@ -57,13 +82,14 @@ body section .floor .f {
 body section .floor .f .title {
   width: 230px;
   height: 25px;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 body section .floor .f .inner {
   margin-left: 20px;
 }
 body section .floor .f .move {
   width: 50px;
-  height: 25px;
+  height: 50px;
   border: 1px solid #fff;
 }/*# sourceMappingURL=gallery.css.map */

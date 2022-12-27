@@ -4,36 +4,43 @@ const elPopup = document.querySelector('.pop-up'),
     elExit = document.querySelector('.pop-up button'); 
 
 
-// elBtn.onclick=function(){
-
-//         elPopup.classList.add('active');
-//     }
-    
-// elExit.onclick = function(e){
-//         if(elPopup.classList.contains('pop-up'))
-//         elPopup.classList.remove('active');
-// }
-
-
 elBtn.onclick=function(){
-    elBtn.classList.toggle('pop-up');
-
-    let blen = elBtn.classList.contains('pop-up');
-
-    if(blen){
         elPopup.classList.add('active');
-    }
-    else{
-        elPopup.classList.remove('active');
-    }
-}
-
-elExit.onclick = function(e){
-    if(elPopup.classList.contains('pop-up'))
-    elPopup.classList.remove('active');
 }
 
 
+elPopup.onclick = function(e){
+
+    if(e.target.classList.contains('pop-up'))
+    {elPopup.classList.remove('active');}
+
+    console.log(e);
+        elExit.onclick = function(){
+            elPopup.classList.remove('active');
+        }
+}
+
+//썸네일 활성화 
+
+mouseover 하면 innerHTML  = `div`
+
+let data=[
+    {url:'../img/2f.jpg'},
+    {url:'../img/1f.jpg'},
+    {url:'../img/b1f.jpg'},
+    {url:'../img/b2f.jpg'},
+]
+
+const elThumb = document.querySelector('.f span');
+let tag = '';
+
+
+data.forEach(function(value, key){
+    tag += `<figure>
+    <img src="${data[key].url}">
+    </figure>`;
+})
+elThumb.innerHTML = tag; 
 
 
 
