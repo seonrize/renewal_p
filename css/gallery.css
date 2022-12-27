@@ -18,18 +18,19 @@ body section {
   left: 20%;
 }
 body section h1 {
-  font-size: 26px;
+  font-size: 1.6rem;
 }
 body section .title01 button {
   border-bottom: 1px solid;
   cursor: pointer;
   color: rgb(133, 118, 118);
-  font-size: 18px;
+  font-size: 1.2rem;
   background-color: transparent;
   font-weight: bold;
 }
 body section .title01 button:hover {
   color: #AC0A00;
+  transition: all 0.2s ease-in-out;
 }
 body section .pop-up {
   width: 100%;
@@ -59,7 +60,7 @@ body section .pop-up article button {
   right: 20px;
   border-style: none;
   background-color: transparent;
-  font-size: 30px;
+  font-size: 1.75rem;
   color: #AC0A00;
   font-weight: bold;
   cursor: pointer;
@@ -78,18 +79,44 @@ body section .floor .f {
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
 body section .floor .f .title {
-  width: 230px;
+  width: 15vw;
   height: 25px;
-  font-size: 20px;
+  font-size: 1.3rem;
   font-weight: bold;
+  padding: 20px;
 }
 body section .floor .f .inner {
+  width: 55vw;
   margin-left: 20px;
+  line-height: middle;
+  text-align: center;
+  font-size: 1.2rem;
 }
 body section .floor .f .move {
   width: 50px;
   height: 50px;
   border: 1px solid #fff;
+}
+body section .floor .f .inner:hover {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body section .f:nth-child(1):hover::after {
+  content: "";
+  width: 155px;
+  height: 105px;
+  border: 2px solid #ddd;
+  position: absolute;
+  background-color: pink;
+}
+body section .thumb {
+  display: none;
+  width: 155px;
+  height: 105px;
+  border: 2px solid #ddd;
+  position: absolute;
 }/*# sourceMappingURL=gallery.css.map */

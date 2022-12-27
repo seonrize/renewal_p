@@ -18,18 +18,19 @@ body{
         color: #ffffff;
         left: 20%;
         h1{
-            font-size:26px;
+            font-size:1.6rem;
         }
         .title01{
             button{
                 border-bottom: 1px solid;
                 cursor: pointer;
                 color: rgb(133, 118, 118);
-                font-size: 18px;
+                font-size: 1.2rem;
                 background-color: transparent;
                 font-weight: bold;
                 &:hover{
                     color: #AC0A00;
+                    transition: all 0.2s ease-in-out;
                 }
             }
         }
@@ -41,6 +42,7 @@ body{
             justify-content: center; align-items: center;
             background-color: rgba(0,0,0,6);
             display: none;
+
             article{
                 left: 50%;
                 transform: translateX(-50%);
@@ -51,7 +53,6 @@ body{
                 text-align: center;
                 padding: 20px;
                 position: absolute;
-                
                             h2{
                             }
                             .figure{
@@ -67,7 +68,7 @@ body{
                                 right: 20px;
                                 border-style: none;
                                 background-color: transparent;
-                                font-size: 30px;
+                                font-size: 1.75rem;
                                 color: #AC0A00;
                                 font-weight: bold;
                                 cursor: pointer;
@@ -89,23 +90,55 @@ body{
                 border-bottom: 1px solid #ddd;
                 display: flex;
                 justify-content: space-between;
+                position: relative;
                 .title{
-                    width: 230px;
-                    height: 25px;;
-                    font-size: 20px;
+                    width: 15vw;
+                    height: 25px;
+                    font-size: 1.3rem;
                     font-weight: bold;
+                    padding: 20px;
                 }
                 .inner{
-
+                    width: 55vw;
                     margin-left: 20px;
+                    line-height: middle;
+                    text-align: center;
+                    font-size: 1.2rem;
                 }
                 .move{ 
                     width: 50px;
                     height: 50px;
                     border: 1px solid #fff;
                 }
+
+                .inner:hover{
+                    //color: #AC0A00;   //color - font-color 
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                }
+
             }
-    
+            
+            
+        }
+        .f:nth-child(1):hover{
+            &::after{
+            content: "";
+            width: 155px;
+            height: 105px;
+            border: 2px solid #ddd;
+            position:absolute;
+            background-color: pink;
+            }
+        }
+
+        .thumb{
+            display: none;
+            width: 155px;
+            height: 105px;
+            border: 2px solid #ddd;
+            position: absolute;
         }
     }
     

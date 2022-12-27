@@ -22,27 +22,22 @@ elPopup.onclick = function(e){
 
 //썸네일 활성화 
 
-mouseover 하면 innerHTML  = `div`
+// let data=[
+//     {url:'../img/2f.jpg'},
+//     {url:'../img/1f.jpg'},
+//     {url:'../img/b1f.jpg'},
+//     {url:'../img/b2f.jpg'},
+// ]
 
-let data=[
-    {url:'../img/2f.jpg'},
-    {url:'../img/1f.jpg'},
-    {url:'../img/b1f.jpg'},
-    {url:'../img/b2f.jpg'},
-]
+// const elThumb = document.querySelector('span'),
+//         elImg = document.querySelector('.thumb');
 
-const elThumb = document.querySelector('.f span');
-let tag = '';
+//         console.log(elThumb);
+        
+//         let tag = '';
 
-
-data.forEach(function(value, key){
-    tag += `<figure>
-    <img src="${data[key].url}">
-    </figure>`;
-})
-elThumb.innerHTML = tag; 
-
-
-
+//             elThumb.addEventListener('mouseover', (event) => {
+//                 elImg.style.display="block";
+//             });
 
 
