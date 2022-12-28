@@ -38,10 +38,10 @@ const elMain = document.querySelector("main"),
       
       function animation(key) {    
         try {
-          if (event.wheelDelta < 0) {
+          if (e.wheelDelta < 0) {
             move = elSec[key].nextElementSibling.offsetTop;
             key++;
-          } else if (event.wheelDelta > 0) {
+          } else if (e.wheelDelta > 0) {
             move = elSec[key].previousElementSibling.offsetTop;
             key--;
           } else {
