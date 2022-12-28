@@ -1,4 +1,20 @@
+.swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 300px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
 * {
     padding: 0;
     margin: 0 auto;
@@ -17,24 +33,6 @@ $images:
     url('../img/life/page04.png'),
     url('../img/life/page05.png'), 
     url('../img/life/page01.png');
-
-.swiper {
-    width: 100%;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-.swiper-slide {
-    background-position: center;
-    background-size: cover;
-    width: 200px;
-    height: 300px;
-}
-
-.swiper-slide img {
-    display: block;
-    width: 100%;
-}
 
 .book {
     position: relative;
