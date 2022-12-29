@@ -37,23 +37,26 @@ const elMain = document.querySelector("main"),
 
       
       function animation(key) {    
+        console.log(key);
         try {
-          if (e.wheelDelta < 0) {
+          if (event.wheelDelta < 0) {
             move = elSec[key].nextElementSibling.offsetTop;
-            key++;
-          } else if (e.wheelDelta > 0) {
+            update(key+1);
+            // key++;
+          } else if (event.wheelDelta > 0) {
             move = elSec[key].previousElementSibling.offsetTop;
-            key--;
+            update(key-1);
+            // key--;
           } else {
             move = elSec[key].offsetTop;
           }
         } catch {}
         elMain.style = `transform:translateY(-${move}px)`;
-
-        update(key);
       }
 
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+
