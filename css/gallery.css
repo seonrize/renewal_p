@@ -16,28 +16,31 @@ body {
 }
 body header {
   width: 100vw;
-  top: 38px;
+  top: 47px;
 }
 body header h1 {
   font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
 }
-body section .content01 {
-  width: 100vw;
+body .section01 {
+  width: 100%;
   height: 100vh;
 }
-body section .content01 article {
+body .section01 .content01 {
+  width: 100vw;
+}
+body .section01 .content01 article {
   margin: 0 auto;
   width: 83vw;
 }
-body section .content01 article h2 {
+body .section01 .content01 article h2 {
   margin-top: 100px;
   font-weight: 400;
   position: relative;
   padding-left: 20px;
 }
-body section .content01 article h2::before {
+body .section01 .content01 article h2::before {
   content: "";
   width: 8px;
   height: 23px;
@@ -47,50 +50,49 @@ body section .content01 article h2::before {
   transform: translate(-210%, -45%);
   border-radius: 30px;
 }
-body section .content01 article figure {
+body .section01 .content01 article figure {
   align-items: center;
   margin-top: 55px;
   margin-left: 0;
   margin-right: 0;
   font-weight: 500;
 }
-body section .content01 article figure img {
+body .section01 .content01 article figure img {
   position: relative;
   left: 50%;
   translate: -50%;
-  width: 758px;
-  height: 351px;
+  width: 40vw;
   margin-bottom: 48px;
 }
-body section .content01 article figure figcaption {
+body .section01 .content01 article figure figcaption {
   line-height: 1.5rem;
   font-size: 1.13rem;
 }
-body section .content01 article figure figcaption p {
+body .section01 .content01 article figure figcaption p {
   margin-bottom: 10px;
 }
-body section .content01 article figure figcaption span {
+body .section01 .content01 article figure figcaption span {
   color: rgb(22, 22, 169);
   font-size: 1.15rem;
 }
-body section .content02 {
-  width: 100vw;
+body .section02 {
+  width: 100%;
   height: 100vh;
   margin-top: 163px;
   background-color: #000;
   color: #fff;
 }
-body section .content02 .floor {
+body .section02 .floor {
   margin: 0 auto;
   padding-top: 120px;
   width: 83vw;
 }
-body section .content02 .floor h2 {
+body .section02 .floor h2 {
   font-weight: 400;
   position: relative;
   padding-left: 18px;
 }
-body section .content02 .floor h2::before {
+body .section02 .floor h2::before {
   content: "";
   width: 8px;
   height: 23px;
@@ -100,64 +102,102 @@ body section .content02 .floor h2::before {
   transform: translate(-210%, -45%);
   border-radius: 30px;
 }
-body section .content02 .floor .f {
-  height: 164px;
+body .section02 .floor .f {
+  height: 17vh;
   border-bottom: 1px solid #ddd;
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: relative;
 }
-body section .content02 .floor .f .floor-name {
-  width: 17vw;
+body .section02 .floor .f .floor-name {
+  width: 9vw;
   font-size: 2.625rem;
   font-weight: 700;
   padding: 45px;
 }
-body section .content02 .floor .f .inner {
-  width: 55vw;
+body .section02 .floor .f .inner {
+  width: 66vw;
   line-height: middle;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-body section .content02 .floor .f .move {
+body .section02 .floor .f .move {
   width: 17vw;
 }
-body section .content02 .floor .f .move img {
+body .section02 .floor .f .move img {
   width: 81px;
   height: 107px;
-  padding-left: 165px;
+  padding-left: 8vw;
+  padding-right: 20px;
 }
-body section .content02 .floor .f .inner:hover {
+body .section02 .floor .f .inner:hover {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-body section .content02 .floor .floor-03 {
+body .section02 .floor .move3 {
   position: relative;
 }
-body section .content02 .floor .floor-03::after {
-  content: "전시관 입구";
-  width: 85px;
+body .section02 .floor .move3::before {
+  content: "전시관 입구 ▶";
   left: 0;
-  font-size: 1.1rem;
+  font-size: 0.8vw;
   font-weight: lighter;
-  color: #ddd;
+  color: rgba(221, 221, 221, 0.706);
   position: absolute;
-  transform: translate(24%, -70%);
+  left: 15%;
+  top: 45%;
 }
-body section .f:nth-child(1):hover::after {
+body .section02 .inner01:hover::after {
   content: "";
-  width: 155px;
-  height: 105px;
-  border: 2px solid #ddd;
+  width: 24vw;
+  height: 9.7vh;
+  border-radius: 5px;
   position: absolute;
-  background-color: pink;
+  background: url("../img/gallery/2f.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -35%;
+  left: 35%;
 }
-body section .thumb {
-  display: none;
-  width: 155px;
-  height: 105px;
-  border: 2px solid #ddd;
+body .section02 .inner02:hover::after {
+  content: "";
+  width: 24vw;
+  height: 9.7vh;
+  border-radius: 5px;
   position: absolute;
+  background: url("../img/gallery/1f.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -35%;
+  left: 35%;
+}
+body .section02 .inner03:hover::after {
+  content: "";
+  width: 24vw;
+  height: 9.7vh;
+  border-radius: 5px;
+  position: absolute;
+  background: url("../img/gallery/b1f.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -35%;
+  left: 35%;
+}
+body .section02 .inner04:hover::after {
+  content: "";
+  width: 8vw;
+  height: 9.7vh;
+  border-radius: 5px;
+  position: absolute;
+  background: url("../img/gallery/b2f.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: -35%;
+  left: 43%;
 }/*# sourceMappingURL=gallery.css.map */

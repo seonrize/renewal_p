@@ -14,21 +14,23 @@ a{
 body{
     margin: 0;
     padding: 0;
-
+    
     header{
         width: 100vw;
-        top:38px;
-    
+        top:47px;
+        
         h1{
             font-size:2.5rem;
             text-align: center;
             font-weight: 700;
         }
     }
-    section{
+    
+    .section01{
+        width: 100%;
+        height: 100vh;
         .content01{
             width: 100vw;
-            height: 100vh;
             article{
                 margin: 0 auto;
                 width: 83vw;
@@ -59,8 +61,8 @@ body{
                         position: relative;
                         left: 50%;
                         translate: -50%;
-                        width: 758px;
-                        height: 351px;
+                        width: 40vw;
+                        // height: 351px;
                         margin-bottom: 48px;
                     }
                     figcaption{
@@ -77,9 +79,10 @@ body{
                 }
             }
         }
-    
-        .content02{
-            width: 100vw;
+    }
+
+    .section02{
+            width: 100%;
             height: 100vh;
             margin-top: 163px;
             background-color: #000;
@@ -105,30 +108,31 @@ body{
                     }
                 }
                 .f{
-                    height: 164px;
+                    height: 17vh;
                     border-bottom: 1px solid #ddd;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     position: relative;
                     .floor-name{
-                        width: 17vw;
+                        width: 9vw;
                         font-size: 2.625rem;
                         font-weight: 700;
                         padding: 45px;
                     }
                     .inner{
-                        width: 55vw;
+                        width: 66vw;
                         line-height: middle;
                         text-align: center;
-                        font-size: 1.2rem;
+                        font-size: 1.5rem;
                     }
                     .move{ 
                         width: 17vw;
                         img{
                             width: 81px;
                             height: 107px;
-                            padding-left: 165px; 
+                            padding-left: 8vw; 
+                            padding-right: 20px;
                         }
                     }
     
@@ -140,45 +144,122 @@ body{
                     }
                 }
 
-                .floor-03{
+                .move3{
                     position: relative;
-                    &::after{
-                        content: "전시관 입구";
-                        width: 85px;
+                    &::before{
+                        content: "전시관 입구 ▶";
                         left: 0;
-                        font-size: 1.1rem;
+                        font-size: 0.8vw;
                         font-weight: lighter;
-                        color: #ddd;
+                        color: rgba(221, 221, 221, 0.706);
                         position: absolute;
-                        transform: translate(24%, -70%);
+                        left: 15%;
+                        top: 45%;
                     }
                 }
-                
-                
-            }
         }
 
-        .f:nth-child(1):hover{
+        .inner01:hover{
             &::after{
             content: "";
-            width: 155px;
-            height: 105px;
-            border: 2px solid #ddd;
-            position:absolute;
-            background-color: pink;
+            // width: 470px;
+            // height: 105px;
+            width: 24vw;
+            height: 9.7vh;
+            // box-shadow: 10px 10px 20px  rgba(221, 221, 221, 0.706);
+            border-radius: 5px;
+            position: absolute;
+            background: url("../img/gallery/2f.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: -35%;
+            left: 35%;
             }
         }
 
-        .thumb{
-            display: none;
-            width: 155px;
-            height: 105px;
-            border: 2px solid #ddd;
+        .inner02:hover{
+            &::after{
+            content: "";
+            // width: 470px;
+            // height: 105px;
+            width: 24vw;
+            height: 9.7vh;
+            // border: 1px solid #ddd;
+            border-radius: 5px;
             position: absolute;
+            background: url("../img/gallery/1f.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: -35%;
+            left: 35%;
+            }
         }
+
+        .inner03:hover{
+            &::after{
+            content: "";
+            // width: 470px;
+            // height: 105px;
+            width: 24vw;
+            height: 9.7vh;
+            // border: 1px solid #ddd;
+            border-radius: 5px;
+            position: absolute;
+            background: url("../img/gallery/b1f.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: -35%;
+            left: 35%;
+            }
+        }
+
+        .inner04:hover{
+            &::after{
+            content: "";
+            // width: 155px;
+            // height: 105px;
+            width: 8vw;
+            height: 9.7vh;
+            // border: 1px solid #ddd;
+            border-radius: 5px;
+            position: absolute;
+            background: url("../img/gallery/b2f.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            top: -35%;
+            left: 43%;
+            }
+        }
+
     }
 
-    article{
-    
+    .section03{
+        .guide{
+            h2{}
+        
+            .con-box01{
+                .con{
+                    img{}
+                    h3{}
+                    ul{
+                        li{}
+                    }
+                }
+            }
+        }
+
+        .map{
+            h2{}
+            .map-box{}
+        }
+
+        .study{
+            h2{}
+            
+        }
     }
 }
