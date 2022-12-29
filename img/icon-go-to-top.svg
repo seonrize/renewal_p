@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70">
+  <g id="top_bt" transform="translate(-1428 -3835)">
+    <circle id="Ellipse_30" data-name="Ellipse 30" cx="35" cy="35" r="35" transform="translate(1428 3835)" fill="#05141f" opacity="0.6"/>
+    <text id="TOP" transform="translate(1463 3881)" fill="#fff" font-size="12" font-family="Helvetica"><tspan x="-12.229" y="0">TOP</tspan></text>
+    <g id="Icon_feather-arrow-left" data-name="Icon feather-arrow-left" transform="translate(1456 3868) rotate(-90)">
+      <path id="Path_271" data-name="Path 271" d="M7.5,22.5,15.618,15,7.5,7.5" transform="translate(-2.527 -7.5)" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="1"/>
+    </g>
+  </g>
+</svg>
