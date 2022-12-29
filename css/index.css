@@ -1,1 +1,254 @@
-/*# sourceMappingURL=index.css.map */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  width: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.intro {
+  width: 40%;
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-animation-name: imgSize;
+          animation-name: imgSize;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in;
+          animation-timing-function: ease-in;
+  z-index: 1;
+}
+
+body::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgb(0, 0, 0);
+  -webkit-animation-name: backUp;
+          animation-name: backUp;
+  -webkit-animation-duration: 1.4s;
+          animation-duration: 1.4s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  z-index: 0;
+}
+
+@-webkit-keyframes backUp {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes backUp {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.intro img {
+  width: 100%;
+}
+
+@-webkit-keyframes imgSize {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 50%;
+    top: 50%;
+    opacity: 0.5;
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.05);
+    left: 6.25rem;
+    top: 3.125rem;
+    opacity: 1;
+  }
+}
+
+@keyframes imgSize {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    left: 50%;
+    top: 50%;
+    opacity: 0;
+  }
+  35% {
+    transform: translate(-50%, -50%) scale(0.3);
+    left: 50%;
+    top: 50%;
+    opacity: 0.5;
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    left: 50%;
+    top: 50%;
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(0.05);
+    left: 6.25rem;
+    top: 3.125rem;
+    opacity: 1;
+  }
+}
+.square {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 60em;
+  z-index: -1;
+}
+
+.transform {
+  z-index: -1;
+  width: 43rem;
+  height: 25rem;
+  border: solid 6px #d10a00;
+  -webkit-animation: spin 54s ease-out 0s infinite alternate;
+          animation: spin 54s ease-out 0s infinite alternate;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-3600deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateY(0deg);
+  }
+  100% {
+    transform: rotateY(-3600deg);
+  }
+}
+.quote {
+  position: absolute;
+  width: 50vw;
+  display: flex;
+  left: 50%;
+  top: 38%;
+  transform: translate(-50%, -50%);
+  justify-content: space-between;
+}
+
+.quote img {
+  opacity: 0.7;
+}
+
+/*/////////////////////////////////////////////*/
+aside {
+  position: fixed;
+  right: 3%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+aside button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: block;
+  padding: 0;
+  margin: 10px 0;
+  border: none;
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+aside button.active {
+  background-color: red;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  transition: 1s;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 0.005em;
+}
+
+.main-contents {
+  height: 100vh;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -2;
+  overflow: hidden;
+}
+
+.main-contents img {
+  scale: 0.88;
+  transform: translateY(-7.5%);
+}/*# sourceMappingURL=index.css.map */
