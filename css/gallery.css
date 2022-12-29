@@ -1,1 +1,163 @@
-/*# sourceMappingURL=gallery.css.map */
+@charset "UTF-8";
+@import url("./common.css");
+* {
+  box-sizing: content-box;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body header {
+  width: 100vw;
+  top: 38px;
+}
+body header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700;
+}
+body section .content01 {
+  width: 100vw;
+  height: 100vh;
+}
+body section .content01 article {
+  margin: 0 auto;
+  width: 83vw;
+}
+body section .content01 article h2 {
+  margin-top: 100px;
+  font-weight: 400;
+  position: relative;
+  padding-left: 20px;
+}
+body section .content01 article h2::before {
+  content: "";
+  width: 8px;
+  height: 23px;
+  background-color: #AC0A00;
+  position: absolute;
+  top: 50%;
+  transform: translate(-210%, -45%);
+  border-radius: 30px;
+}
+body section .content01 article figure {
+  align-items: center;
+  margin-top: 55px;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: 500;
+}
+body section .content01 article figure img {
+  position: relative;
+  left: 50%;
+  translate: -50%;
+  width: 758px;
+  height: 351px;
+  margin-bottom: 48px;
+}
+body section .content01 article figure figcaption {
+  line-height: 1.5rem;
+  font-size: 1.13rem;
+}
+body section .content01 article figure figcaption p {
+  margin-bottom: 10px;
+}
+body section .content01 article figure figcaption span {
+  color: rgb(22, 22, 169);
+  font-size: 1.15rem;
+}
+body section .content02 {
+  width: 100vw;
+  height: 100vh;
+  margin-top: 163px;
+  background-color: #000;
+  color: #fff;
+}
+body section .content02 .floor {
+  margin: 0 auto;
+  padding-top: 120px;
+  width: 83vw;
+}
+body section .content02 .floor h2 {
+  font-weight: 400;
+  position: relative;
+  padding-left: 18px;
+}
+body section .content02 .floor h2::before {
+  content: "";
+  width: 8px;
+  height: 23px;
+  background-color: #AC0A00;
+  position: absolute;
+  top: 50%;
+  transform: translate(-210%, -45%);
+  border-radius: 30px;
+}
+body section .content02 .floor .f {
+  height: 164px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+body section .content02 .floor .f .floor-name {
+  width: 17vw;
+  font-size: 2.625rem;
+  font-weight: 700;
+  padding: 45px;
+}
+body section .content02 .floor .f .inner {
+  width: 55vw;
+  line-height: middle;
+  text-align: center;
+  font-size: 1.2rem;
+}
+body section .content02 .floor .f .move {
+  width: 17vw;
+}
+body section .content02 .floor .f .move img {
+  width: 81px;
+  height: 107px;
+  padding-left: 165px;
+}
+body section .content02 .floor .f .inner:hover {
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+body section .content02 .floor .floor-03 {
+  position: relative;
+}
+body section .content02 .floor .floor-03::after {
+  content: "전시관 입구";
+  width: 85px;
+  left: 0;
+  font-size: 1.1rem;
+  font-weight: lighter;
+  color: #ddd;
+  position: absolute;
+  transform: translate(24%, -70%);
+}
+body section .f:nth-child(1):hover::after {
+  content: "";
+  width: 155px;
+  height: 105px;
+  border: 2px solid #ddd;
+  position: absolute;
+  background-color: pink;
+}
+body section .thumb {
+  display: none;
+  width: 155px;
+  height: 105px;
+  border: 2px solid #ddd;
+  position: absolute;
+}/*# sourceMappingURL=gallery.css.map */
