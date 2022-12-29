@@ -1,19 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+      integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc"
+      crossorigin="anonymous"
+    />
     <!-- css,js 파일연결 -->
     <link href="../css/letter.css" rel="stylesheet" />
     <link href="../css/common.css" rel="stylesheet" />
     <script defer src="../page/letter.js"></script>
     <!-- jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-</head>
-<body>
-    <div>letter 8140</div>
-</body>
+  </head>
+  <body>
+    <body>
+        <div>
+          <h1 class="retter-title">편지쓰기</h1>
+          <!-- <div class="img-con">
+              <img class="hands" src="./img/man.png">
+            </div> -->
+          <h2 class="title">
+            안중근 의사에게 마음을 전해보세요
+            <i
+              class="fas fa-paper-plane"
+              style="margin-top: 0.3rem; margin-left: 0.5rem"
+            ></i>
+          </h2>
+          <div class="container">
+            <section class="input-area">
+              <input
+                class="input-style"
+                type="text"
+                autofocus
+                id="task-input"
+                placeholder="From"
+              />
+            </section>
+    
+            <section class="input-area1">
+              <textarea
+                class="input-style1"
+                type="text"
+                autofocus
+                id="task-input1"
+                placeholder="To"
+                maxlength="242"
+              ></textarea>
+              <div class="send-area">
+                <button class="button-style" id="add-button">
+                  <div class="plus">전송하기</div>
+                </button>
+              </div>
+            </section>
+    
+            <div class="layerPopup">
+              <div class="spinner"></div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        <div class="task-page">
+          <section class="task-area">
+            <div class="task-board" id="task-board"></div>
+          </section>
+    
+          <div class="retter-move">
+            <div class="button-style1" id="move-button">
+              <span>편지함가기</span>
+              <span class="masker">
+                <span>편지함가기</span>
+              </span>
+            </div>
+          </div>
+        </div>
+        <script src="main.js"></script>
+      </body>
+  </body>
 </html>
