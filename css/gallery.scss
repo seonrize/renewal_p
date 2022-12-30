@@ -10,256 +10,281 @@ a{
     color: #fff;
 }
 
-
+body, section {
+    margin:0;
+    padding:0;
+}
 body{
-    margin: 0;
-    padding: 0;
-    
-    header{
+
+    section:nth-child(even){
+        background-color: #000;
+    }
+
+    .section01{
         width: 100vw;
-        top:47px;
-        
-        h1{
+        height: 100vh;
+        h1{ 
+            width: 100vw;
+            top: 47px;
             font-size:2.5rem;
             text-align: center;
-            font-weight: 700;
+            font-weight: 700 bold; 
+            
         }
-    }
-    
-    .section01{
-        width: 100%;
-        height: 100vh;
-        .content01{
-            width: 100vw;
-            article{
-                margin: 0 auto;
-                width: 83vw;
-                h2{
-                    margin-top: 100px;
-                    font-weight: 400;
-                    position: relative;
-                    padding-left: 20px;
-                    
-                    &::before{
-                        content: "";
-                        width: 8px;
-                        height: 23px;
-                        background-color:#AC0A00; 
-                        position: absolute;
-                        top: 50%;
-                        transform: translate(-210%,-45%);
-                        border-radius: 30px;
-                    }
+        h2{
+            margin-top: 120px;
+            font-weight: 400;
+            position: relative;
+            left: 10.5vw;
+
+            &::before{
+                content: "";
+                width: 8px;
+                height: 25px;
+                background-color:#AC0A00; 
+                position: absolute;
+                top: 23%;
+                left: -1%;
+                border-radius: 25px;
+            }
+        }
+        figure{
+            margin: 0 auto;
+            width: 79.5vw;
+            left: 50%;
+            // transform: translateX(-50%);
+            margin-top: 55px;
+            align-items: center;
+            font-weight: 500;
+            img{
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40vw;
+                // height: 351px;
+                margin-bottom: 48px;
+            }
+            figcaption{
+                line-height: 1.5rem;
+                            font-size: 1.13rem;
+                p{
+                    margin-bottom: 10px;
                 }
-                figure{
-                    align-items: center;
-                    margin-top: 55px;
-                    margin-left: 0;
-                    margin-right: 0;
-                    font-weight: 500;
-                    img{
-                        position: relative;
-                        left: 50%;
-                        translate: -50%;
-                        width: 40vw;
-                        // height: 351px;
-                        margin-bottom: 48px;
-                    }
-                    figcaption{
-                        line-height: 1.5rem;
-                        font-size: 1.13rem;
-                        p{
-                            margin-bottom: 10px;
-                        }
-                        span{
-                            color: rgb(22, 22, 169);
-                            font-size: 1.15rem;
-                        }
-                    }
+                div{
+                    color: rgb(22, 22, 169);
+                    font-size: 1.15rem;
                 }
             }
         }
     }
-
+    
     .section02{
-            width: 100%;
-            height: 100vh;
-            margin-top: 163px;
-            background-color: #000;
-            color: #fff;
-            .floor{
-                margin: 0 auto;
-                padding-top: 120px;
-                width: 83vw;
-                h2{
-                    font-weight: 400;
-                    position: relative;
-                    padding-left: 18px;
-                    
-                    &::before{
-                        content: "";
-                        width: 8px;
-                        height: 23px;
-                        background-color:#AC0A00; 
-                        position: absolute;
-                        top: 50%;
-                        transform: translate(-210%,-45%);
-                        border-radius: 30px;
-                    }
+        width: 100vw;
+        height: 100vh;
+        color: #fff;
+        h2{
+            top: 100px;
+            font-weight: 400;
+            position: relative;
+            left: 10.5vw;
+                &::before{
+                    content: "";
+                    width: 8px;
+                    height: 25px;
+                    background-color:#AC0A00; 
+                    position: absolute;
+                    top: 23%;
+                    left: -1%;
+                    border-radius: 25px;
                 }
-                .f{
-                    height: 17vh;
+            }
+        
+        .floor{
+            margin: 0 auto;
+            padding-top: 120px;
+            width: 81vw;
+            .f{
+                height: 17vh;
                     border-bottom: 1px solid #ddd;
                     display: flex;
                     justify-content: space-between;
                     align-items: center;
                     position: relative;
-                    .floor-name{
-                        width: 9vw;
-                        font-size: 2.625rem;
-                        font-weight: 700;
-                        padding: 45px;
+                .floor-name{
+                    width: 9vw;
+                    font-size: 2.625rem;
+                    font-weight: 700;
+                    padding: 45px;
+                }
+                .inner{
+                    width: 66vw;
+                    line-height: middle;
+                    text-align: center;
+                    font-size: 1.5rem;
+                }
+                .move{
+                    width: 17vw;
+                    img{
+                        width: 81px;
+                        height: 107px;
+                        padding-left: 8vw; 
+                        padding-right: 20px;
                     }
-                    .inner{
-                        width: 66vw;
-                        line-height: middle;
-                        text-align: center;
-                        font-size: 1.5rem;
-                    }
-                    .move{ 
-                        width: 17vw;
-                        img{
-                            width: 81px;
-                            height: 107px;
-                            padding-left: 8vw; 
-                            padding-right: 20px;
-                        }
-                    }
+                }
+                .inner:hover{
+                    //color: #AC0A00;   //color - font-color 
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: all 0.2s ease-in-out;
+                }
+            }
+
+            .move3{
+                position: relative;
+                &::before{
+                    content: "전시관 입구 ▶";
+                    left: 0;
+                    font-size: 0.8vw;
+                    font-weight: lighter;
+                    color: rgba(221, 221, 221, 0.706);
+                    position: absolute;
+                    left: 15%;
+                    top: 45%;
+                }
+            }
+
+            .inner01:hover{
+                &::after{
+                content: "";
+                // width: 470px;
+                // height: 105px;
+                width: 24vw;
+                height: 9.7vh;
+                // box-shadow: 10px 10px 20px  rgba(221, 221, 221, 0.706);
+                border-radius: 5px;
+                position: absolute;
+                background: url("../img/gallery/2f.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -35%;
+                left: 35%;
+                }
+            }
     
-                    .inner:hover{
-                        //color: #AC0A00;   //color - font-color 
-                        font-weight: bold;
-                        cursor: pointer;
-                        transition: all 0.2s ease-in-out;
-                    }
+            .inner02:hover{
+                &::after{
+                content: "";
+                // width: 470px;
+                // height: 105px;
+                width: 24vw;
+                height: 9.7vh;
+                // border: 1px solid #ddd;
+                border-radius: 5px;
+                position: absolute;
+                background: url("../img/gallery/1f.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -35%;
+                left: 35%;
                 }
-
-                .move3{
-                    position: relative;
-                    &::before{
-                        content: "전시관 입구 ▶";
-                        left: 0;
-                        font-size: 0.8vw;
-                        font-weight: lighter;
-                        color: rgba(221, 221, 221, 0.706);
-                        position: absolute;
-                        left: 15%;
-                        top: 45%;
-                    }
+            }
+    
+            .inner03:hover{
+                &::after{
+                content: "";
+                // width: 470px;
+                // height: 105px;
+                width: 24vw;
+                height: 9.7vh;
+                // border: 1px solid #ddd;
+                border-radius: 5px;
+                position: absolute;
+                background: url("../img/gallery/b1f.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -35%;
+                left: 35%;
                 }
-        }
-
-        .inner01:hover{
-            &::after{
-            content: "";
-            // width: 470px;
-            // height: 105px;
-            width: 24vw;
-            height: 9.7vh;
-            // box-shadow: 10px 10px 20px  rgba(221, 221, 221, 0.706);
-            border-radius: 5px;
-            position: absolute;
-            background: url("../img/gallery/2f.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            top: -35%;
-            left: 35%;
+            }
+    
+            .inner04:hover{
+                &::after{
+                content: "";
+                // width: 155px;
+                // height: 105px;
+                width: 8vw;
+                height: 9.7vh;
+                // border: 1px solid #ddd;
+                border-radius: 5px;
+                position: absolute;
+                background: url("../img/gallery/b2f.jpg");
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                top: -35%;
+                left: 43%;
+                }
             }
         }
-
-        .inner02:hover{
-            &::after{
-            content: "";
-            // width: 470px;
-            // height: 105px;
-            width: 24vw;
-            height: 9.7vh;
-            // border: 1px solid #ddd;
-            border-radius: 5px;
-            position: absolute;
-            background: url("../img/gallery/1f.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            top: -35%;
-            left: 35%;
-            }
-        }
-
-        .inner03:hover{
-            &::after{
-            content: "";
-            // width: 470px;
-            // height: 105px;
-            width: 24vw;
-            height: 9.7vh;
-            // border: 1px solid #ddd;
-            border-radius: 5px;
-            position: absolute;
-            background: url("../img/gallery/b1f.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            top: -35%;
-            left: 35%;
-            }
-        }
-
-        .inner04:hover{
-            &::after{
-            content: "";
-            // width: 155px;
-            // height: 105px;
-            width: 8vw;
-            height: 9.7vh;
-            // border: 1px solid #ddd;
-            border-radius: 5px;
-            position: absolute;
-            background: url("../img/gallery/b2f.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            top: -35%;
-            left: 43%;
-            }
-        }
-
     }
-
+    
     .section03{
+        width: 100vw;
+        height: 100vh;
         .guide{
-            h2{}
-        
+            h2{
+                margin-top: 120px;
+                font-weight: 400;
+                position: relative;
+                left: 10.5vw;
+    
+                &::before{
+                    content: "";
+                    width: 8px;
+                    height: 25px;
+                    background-color:#AC0A00; 
+                    position: absolute;
+                    top: 23%;
+                    left: -1%;
+                    border-radius: 25px;
+                }
+            }
+    
             .con-box01{
+                display: flex;
                 .con{
                     img{}
                     h3{}
                     ul{
                         li{}
                     }
+    
                 }
             }
         }
-
+    
         .map{
-            h2{}
+            h2{
+                margin-top: 120px;
+                font-weight: 400;
+                position: relative;
+                left: 10.5vw;
+    
+                &::before{
+                    content: "";
+                    width: 8px;
+                    height: 25px;
+                    background-color:#AC0A00; 
+                    position: absolute;
+                    top: 23%;
+                    left: -1%;
+                    border-radius: 25px;
+                }}
             .map-box{}
         }
-
-        .study{
-            h2{}
-            
-        }
     }
+    
 }

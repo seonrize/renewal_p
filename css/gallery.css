@@ -10,97 +10,92 @@ a {
   color: #fff;
 }
 
-body {
+body, section {
   margin: 0;
   padding: 0;
 }
-body header {
-  width: 100vw;
-  top: 47px;
-}
-body header h1 {
-  font-size: 2.5rem;
-  text-align: center;
-  font-weight: 700;
+
+body section:nth-child(even) {
+  background-color: #000;
 }
 body .section01 {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
 }
-body .section01 .content01 {
+body .section01 h1 {
   width: 100vw;
+  top: 47px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: 700 bold;
 }
-body .section01 .content01 article {
-  margin: 0 auto;
-  width: 83vw;
-}
-body .section01 .content01 article h2 {
-  margin-top: 100px;
+body .section01 h2 {
+  margin-top: 120px;
   font-weight: 400;
   position: relative;
-  padding-left: 20px;
+  left: 10.5vw;
 }
-body .section01 .content01 article h2::before {
+body .section01 h2::before {
   content: "";
   width: 8px;
-  height: 23px;
+  height: 25px;
   background-color: #AC0A00;
   position: absolute;
-  top: 50%;
-  transform: translate(-210%, -45%);
-  border-radius: 30px;
+  top: 23%;
+  left: -1%;
+  border-radius: 25px;
 }
-body .section01 .content01 article figure {
-  align-items: center;
+body .section01 figure {
+  margin: 0 auto;
+  width: 79.5vw;
+  left: 50%;
   margin-top: 55px;
-  margin-left: 0;
-  margin-right: 0;
+  align-items: center;
   font-weight: 500;
 }
-body .section01 .content01 article figure img {
+body .section01 figure img {
   position: relative;
   left: 50%;
-  translate: -50%;
+  transform: translateX(-50%);
   width: 40vw;
   margin-bottom: 48px;
 }
-body .section01 .content01 article figure figcaption {
+body .section01 figure figcaption {
   line-height: 1.5rem;
   font-size: 1.13rem;
 }
-body .section01 .content01 article figure figcaption p {
+body .section01 figure figcaption p {
   margin-bottom: 10px;
 }
-body .section01 .content01 article figure figcaption span {
+body .section01 figure figcaption div {
   color: rgb(22, 22, 169);
   font-size: 1.15rem;
 }
 body .section02 {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
-  margin-top: 163px;
-  background-color: #000;
   color: #fff;
+}
+body .section02 h2 {
+  top: 100px;
+  font-weight: 400;
+  position: relative;
+  left: 10.5vw;
+}
+body .section02 h2::before {
+  content: "";
+  width: 8px;
+  height: 25px;
+  background-color: #AC0A00;
+  position: absolute;
+  top: 23%;
+  left: -1%;
+  border-radius: 25px;
 }
 body .section02 .floor {
   margin: 0 auto;
   padding-top: 120px;
-  width: 83vw;
-}
-body .section02 .floor h2 {
-  font-weight: 400;
-  position: relative;
-  padding-left: 18px;
-}
-body .section02 .floor h2::before {
-  content: "";
-  width: 8px;
-  height: 23px;
-  background-color: #AC0A00;
-  position: absolute;
-  top: 50%;
-  transform: translate(-210%, -45%);
-  border-radius: 30px;
+  width: 81vw;
 }
 body .section02 .floor .f {
   height: 17vh;
@@ -149,7 +144,7 @@ body .section02 .floor .move3::before {
   left: 15%;
   top: 45%;
 }
-body .section02 .inner01:hover::after {
+body .section02 .floor .inner01:hover::after {
   content: "";
   width: 24vw;
   height: 9.7vh;
@@ -162,7 +157,7 @@ body .section02 .inner01:hover::after {
   top: -35%;
   left: 35%;
 }
-body .section02 .inner02:hover::after {
+body .section02 .floor .inner02:hover::after {
   content: "";
   width: 24vw;
   height: 9.7vh;
@@ -175,7 +170,7 @@ body .section02 .inner02:hover::after {
   top: -35%;
   left: 35%;
 }
-body .section02 .inner03:hover::after {
+body .section02 .floor .inner03:hover::after {
   content: "";
   width: 24vw;
   height: 9.7vh;
@@ -188,7 +183,7 @@ body .section02 .inner03:hover::after {
   top: -35%;
   left: 35%;
 }
-body .section02 .inner04:hover::after {
+body .section02 .floor .inner04:hover::after {
   content: "";
   width: 8vw;
   height: 9.7vh;
@@ -200,4 +195,43 @@ body .section02 .inner04:hover::after {
   background-repeat: no-repeat;
   top: -35%;
   left: 43%;
+}
+body .section03 {
+  width: 100vw;
+  height: 100vh;
+}
+body .section03 .guide h2 {
+  margin-top: 120px;
+  font-weight: 400;
+  position: relative;
+  left: 10.5vw;
+}
+body .section03 .guide h2::before {
+  content: "";
+  width: 8px;
+  height: 25px;
+  background-color: #AC0A00;
+  position: absolute;
+  top: 23%;
+  left: -1%;
+  border-radius: 25px;
+}
+body .section03 .guide .con-box01 {
+  display: flex;
+}
+body .section03 .map h2 {
+  margin-top: 120px;
+  font-weight: 400;
+  position: relative;
+  left: 10.5vw;
+}
+body .section03 .map h2::before {
+  content: "";
+  width: 8px;
+  height: 25px;
+  background-color: #AC0A00;
+  position: absolute;
+  top: 23%;
+  left: -1%;
+  border-radius: 25px;
 }/*# sourceMappingURL=gallery.css.map */
