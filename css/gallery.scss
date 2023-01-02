@@ -31,11 +31,13 @@ body{
                 width: 100vw;
                 height: 100vh;
 
-                h1{
+                h2{
+                    margin: 0;
                     font-size: 2.5rem;
-                    margin-top: 161px ;   //161px 
-                    margin-left: 162px; //162px
-                    margin-bottom: 1%;
+                    padding-top: 15vh;      //161px 
+                    padding-left: 10vw;     //162px
+                    margin-bottom: 0.5%;
+                    font-weight: bold;
                 }
                 // h2{
                 //     margin-top: 7.8vh;
@@ -55,6 +57,7 @@ body{
                 //         border-radius: 25px;
                 //     }
                 //}
+
                 .title{
                     // padding-top: 21vh;
                     padding-left: 10.2vw;
@@ -95,7 +98,7 @@ body{
                         line-height: 1.5rem;
                                     font-size: 1.13rem;
                         p{
-                            margin-bottom: 10px;
+                            margin-bottom: 9px;
                         }
                         div{
                             color: rgb(22, 22, 169);
@@ -109,6 +112,7 @@ body{
                 width: 100vw;
                 height: 100vh;
                 color: #fff;
+                position: relative;
                 .title{
                     padding-top: 15vh;
                     padding-left: 10.2vw;
@@ -131,8 +135,26 @@ body{
                 
                 .floor{
                     margin: 0 auto;
-                    padding-top: 20px;
+                    padding-top: 50px;
                     width: 81vw;
+                    .character{
+                        .arrow-keys{
+                            width: 200px;
+                            height: 30px;
+                            background: rgba(92, 88, 88, 0.4);
+                            color: #E6E6E6;
+                            border-radius: 30px;
+                            border: 1px solid rgb(124, 113, 113);
+                            text-align: center;
+                            position: absolute;
+                            right: 10vw;
+                            top:3vh;
+                            p{
+                                display: inline;
+
+                            }
+                        }
+                    }
                     .f{
                         height: 17vh;
                             border-bottom: 1px solid #ddd;
@@ -151,6 +173,7 @@ body{
                             line-height: middle;
                             text-align: center;
                             font-size: 1.5rem;
+                            position: relative;
                         }
                         .move{
                             width: 20%;
@@ -228,7 +251,7 @@ body{
                         background-size: cover;
                         background-position: center;
                         background-repeat: no-repeat;
-                        top: -35%;
+                        bottom: -125%;
                         left: 35%;
                         }
                     }

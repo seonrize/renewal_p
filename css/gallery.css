@@ -28,11 +28,13 @@ body main .section01 {
   width: 100vw;
   height: 100vh;
 }
-body main .section01 h1 {
+body main .section01 h2 {
+  margin: 0;
   font-size: 2.5rem;
-  margin-top: 161px;
-  margin-left: 162px;
-  margin-bottom: 1%;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  margin-bottom: 0.5%;
+  font-weight: bold;
 }
 body main .section01 .title {
   padding-left: 10.2vw;
@@ -70,7 +72,7 @@ body main .section01 figure figcaption {
   font-size: 1.13rem;
 }
 body main .section01 figure figcaption p {
-  margin-bottom: 10px;
+  margin-bottom: 9px;
 }
 body main .section01 figure figcaption div {
   color: rgb(22, 22, 169);
@@ -80,6 +82,7 @@ body main .section02 {
   width: 100vw;
   height: 100vh;
   color: #fff;
+  position: relative;
 }
 body main .section02 .title {
   padding-top: 15vh;
@@ -100,8 +103,23 @@ body main .section02 .title .title-detail {
 }
 body main .section02 .floor {
   margin: 0 auto;
-  padding-top: 20px;
+  padding-top: 50px;
   width: 81vw;
+}
+body main .section02 .floor .character .arrow-keys {
+  width: 200px;
+  height: 30px;
+  background: rgba(92, 88, 88, 0.4);
+  color: #E6E6E6;
+  border-radius: 30px;
+  border: 1px solid rgb(124, 113, 113);
+  text-align: center;
+  position: absolute;
+  right: 10vw;
+  top: 3vh;
+}
+body main .section02 .floor .character .arrow-keys p {
+  display: inline;
 }
 body main .section02 .floor .f {
   height: 17vh;
@@ -122,6 +140,7 @@ body main .section02 .floor .f .inner {
   line-height: middle;
   text-align: center;
   font-size: 1.5rem;
+  position: relative;
 }
 body main .section02 .floor .f .move {
   width: 20%;
@@ -177,7 +196,7 @@ body main .section02 .floor .inner01:hover::after {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  top: -35%;
+  bottom: -125%;
   left: 35%;
 }
 body main .section02 .floor .inner02:hover::after {
