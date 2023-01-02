@@ -57,11 +57,6 @@ body::after{
     top: 50%;
     opacity: 0;
   }
-  // 20% {
-  //   transform: translate(-50%, -50%) scale(0.7);
-  //   left: 50%;
-  //   top: 50%;
-  // }
   35% {
     transform: translate(-50%, -50%) scale(0.3);
     left: 50%;
@@ -148,7 +143,7 @@ aside button.active {
 body {
   margin: 0;
 }
-main {
+.main-text {
   position: fixed;
   width: 100%;
   height: 100%;
@@ -494,5 +489,7 @@ section {
     text-shadow: -1px 0 0 blue, 1px 0 0 lime;
   }
 }
+
+
 
 

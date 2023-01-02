@@ -1,4 +1,4 @@
-const elMain = document.querySelector("main"),
+const elMain = document.querySelector(".main-text"),
         elAside = document.querySelector("aside"),
         elSec = document.querySelectorAll("section");
 
@@ -28,18 +28,20 @@ const elMain = document.querySelector("main"),
           animation(key);
         });
       });
+      
 
       function update(key) {
         elBtns[b].classList.remove("active");
         elBtns[key].classList.add("active");
         b = key;
       }
-
       
-      function animation(key) {    
+
+      function animation(key,inter=false) {    
         console.log(key);
+        
         try {
-          if (event.wheelDelta < 0) {
+          if (inter || event.wheelDelta < 0 ) {
             move = elSec[key].nextElementSibling.offsetTop;
             update(key+1);
             // key++;
@@ -50,10 +52,23 @@ const elMain = document.querySelector("main"),
           } else {
             move = elSec[key].offsetTop;
           }
+          
         } catch {}
         elMain.style = `transform:translateY(-${move}px)`;
       }
+      
+      setInterval(()=>{
+        animation(key,true)
+      },2000);
 
+      // setTimeout(function animation() {
+      //   console.log('animation');
+      //   setTimeout(animation, 1000);
+      // }, 1000);
+
+
+
+      
 
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
