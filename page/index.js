@@ -58,7 +58,8 @@ const elMain = document.querySelector(".main-text"),
       }
       
       setInterval(()=>{
-        animation(key,true)
+        for
+        animation(0,true)
       },2000);
 
       // setTimeout(function animation() {
