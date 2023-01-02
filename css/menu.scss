@@ -1,16 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap");
-//기본폰트
 * {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: "Noto Sans KR", sans-serif;
 }
 
-//초기화 css
 body{
+    background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
 ul,li{
     list-style: none;
 }
@@ -18,9 +16,6 @@ a {
     text-decoration: none;
 }
 
-
-
-//header (menu)
 div.header-box{
     width: 100%;
     height: 100px;
@@ -99,8 +94,7 @@ input[id="icon"] + label > span {
 a.active::after {
     position: absolute;
     content: "";
-    border-bottom: 3px solid #AC0A00;
-    display: block;
+    border-bottom: 2px solid #000;
     left: 0;
     width: 100%;
 }
@@ -151,3 +145,9 @@ input[id="icon"]:checked + label > span:nth-child(3) {
 #icon:checked + label + #header {
     right:0px;
 }
+
+
+
+
+
+

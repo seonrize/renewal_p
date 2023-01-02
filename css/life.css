@@ -1,9 +1,6 @@
-* {
-  padding: 0;
-  margin: 0 auto;
-  box-sizing: border-box;
+body{
+  background-color: black;
 }
-
 .book {
   position: relative;
   perspective: 630px;

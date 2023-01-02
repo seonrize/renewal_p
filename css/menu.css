@@ -4,6 +4,7 @@
 }
 
 body {
+  background-color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -93,8 +94,7 @@ input[id=icon] + label > span {
 a.active::after {
   position: absolute;
   content: "";
-  border-bottom: 3px solid #AC0A00;
-  display: block;
+  border-bottom: 2px solid #000;
   left: 0;
   width: 100%;
 }
@@ -143,4 +143,4 @@ input[id=icon]:checked + label > span:nth-child(3) {
 
 #icon:checked + label + #header {
   right: 0px;
-}/*# sourceMappingURL=common.css.map */
+}/*# sourceMappingURL=menu.css.map */
