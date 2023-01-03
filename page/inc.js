@@ -1,8 +1,8 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
 
-$('header').load('./inc.html header', head);
-$('footer').load('./inc.html footer > div'); 
+$('header').load('/page/inc.html header > div', head);
+$('footer').load('/page/inc.html footer > div'); 
 
 let idx = localStorage.idx ;  
 

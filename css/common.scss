@@ -5,11 +5,14 @@
 }
 
 //초기화 css
-body{
-    margin: 0;
+html, body, div, span, iframe,
+h1, h2, h3, h4, h5, h6, p,a, 
+img, ul, li, nav,video, figure{
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
+
 
 ul,li{
     list-style: none;
@@ -17,6 +20,7 @@ ul,li{
 a {
     text-decoration: none;
 }
+
 
 
 
