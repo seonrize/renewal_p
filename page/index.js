@@ -4,7 +4,7 @@ const elMain = document.querySelector(".main-text"),
 
       let pos = { y: 0, y2: 0, state: true };
       let offset = [];
-      let idx = 0;
+      // let idx = 0;
       let y = 0;
 
       elSec.forEach(function (section) {
@@ -57,10 +57,13 @@ const elMain = document.querySelector(".main-text"),
         elMain.style = `transform:translateY(-${move}px)`;
       }
       
-      setInterval(()=>{
-        for
-        animation(0,true)
-      },2000);
+      let i=-1; 
+      let timer = setInterval(()=>{
+                  if(i<2){
+                    animation(i,true);
+                    i++;
+                  }
+                },2000);
 
       // setTimeout(function animation() {
       //   console.log('animation');
