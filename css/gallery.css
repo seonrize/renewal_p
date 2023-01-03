@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("./common.css");
+@font-face {
+  font-family: "KCC-Ahnjunggeun";
+  src: url("../fonts/KCC-Ahnjunggeun.otf") format("truetype");
+}
 * {
   box-sizing: content-box;
   font-family: "Noto Sans KR", sans-serif;
@@ -264,7 +268,7 @@ body main .section03 .guide .con-box01 {
   width: 60vw;
   height: 100%;
   margin: 0 auto;
-  margin-top: 20px;
+  padding-top: 2%;
 }
 body main .section03 .guide .con-box01 .con {
   background-color: #C0C0C0;
@@ -288,7 +292,7 @@ body main .section03 .guide .con:nth-child(even) {
   background-color: #E6E6E6;
 }
 body main .section03 .map .title {
-  padding-top: 11vh;
+  padding-top: 12vh;
   padding-left: 10.2vw;
   font-weight: 400;
   font-size: 1.6rem;
@@ -310,13 +314,300 @@ body main .section03 .map .map-box {
   margin: 0 auto;
 }
 body main .section03 .map .map-box iframe {
+  padding-top: 2%;
   width: 100%;
   height: 100%;
 }
 body main .section04 {
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   background-color: black;
+}
+body main .section04 .title {
+  padding-top: 11vh;
+  padding-left: 10.2vw;
+  font-weight: 400;
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+body main .section04 .title .title-box {
+  width: 8px;
+  height: 26px;
+  background-color: #AC0A00;
+  border-radius: 25px;
+}
+body main .section04 .title .title-detail {
+  padding-left: 0.6vw;
+}
+body main .section04 .flex-container {
+  padding-top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+  position: absolute;
+  height: 65vh;
+  width: 80%;
+  display: flex;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  body main .section04 .flex-container {
+    flex-direction: column;
+  }
+  body main .section04 .flex-container -webkit-scrollbar {
+    background-color: transparent;
+  }
+  body main .section04 .flex-container -webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  body main .section04 .flex-container -webkit-scrollbar-track {
+    background-color: transparent;
+  }
+}
+body main .section04 .flex-title {
+  color: #f1f1f1;
+  position: relative;
+  font-size: 2rem;
+  margin: 0 auto;
+  text-align: center;
+  transform: rotate(90deg);
+  top: 50%;
+  transition: all 500ms ease;
+  font-family: "KCC-Ahnjunggeun";
+}
+@media screen and (max-width: 768px) {
+  body main .section04 .flex-title {
+    transform: rotate(0deg) !important;
+  }
+}
+body main .section04 .flex-about {
+  opacity: 0;
+  color: #f1f1f1;
+  position: relative;
+  width: 70%;
+  font-size: 1.5vw;
+  padding: 5%;
+  top: 20%;
+  border: 2px solid #f1f1f1;
+  border-radius: 10px;
+  line-height: 1.3;
+  margin: auto;
+  text-align: left;
+  transform: rotate(0deg);
+  transition: all 500ms ease;
+}
+@media screen and (max-width: 768px) {
+  body main .section04 .flex-about {
+    padding: 0%;
+    border: 0px solid #f1f1f1;
+  }
+}
+body main .section04 .flex-about button {
+  border-style: none;
+  background-color: transparent;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  font-size: 1.6vw;
+  padding: 20px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+body main .section04 .flex-slide { /* Safari 6.1+ */ /* IE 10 */
+  flex: 1;
+  cursor: pointer;
+  transition: all 500ms ease;
+}
+@media screen and (max-width: 768px) {
+  body main .section04 .flex-slide {
+    overflow: auto;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-width: 768px) {
+  body main .section04 .flex-slide p {
+    font-size: 2em;
+  }
+}
+body main .section04 .flex-slide:hover {
+  flex-grow: 6;
+}
+body main .section04 .home {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu01.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .home {
+    -webkit-animation: aboutFlexSlide 3s 1;
+            animation: aboutFlexSlide 3s 1;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+  body main .section04 .home ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@-webkit-keyframes aboutFlexSlide {
+  0% {
+    flex-grow: 1;
+  }
+  50% {
+    flex-grow: 3;
+  }
+  100% {
+    flex-grow: 1;
+  }
+}
+@keyframes aboutFlexSlide {
+  0% {
+    flex-grow: 1;
+  }
+  50% {
+    flex-grow: 3;
+  }
+  100% {
+    flex-grow: 1;
+  }
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .flex-title-home {
+    transform: rotate(90deg);
+    top: 15%;
+    -webkit-animation: aboutFlexSlide 3s 1;
+            animation: aboutFlexSlide 3s 1;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+}
+@-webkit-keyframes homeFlextitle {
+  0% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+  50% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+  100% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+}
+@keyframes homeFlextitle {
+  0% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+  50% {
+    transform: rotate(0deg);
+    top: 15%;
+  }
+  100% {
+    transform: rotate(90deg);
+    top: 15%;
+  }
+}
+body main .section04 .flex-about-home {
+  opacity: 0;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .flex-about-home {
+    -webkit-animation: aboutFlexSlide 3s 1;
+            animation: aboutFlexSlide 3s 1;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+  }
+}
+@-webkit-keyframes flexAboutHome {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes flexAboutHome {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+body main .section04 .about {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu02.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .about ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body main .section04 .contact-form {
+  width: 100%;
+}
+body main .section04 input {
+  width: 100%;
+}
+body main .section04 textarea {
+  width: 100%;
+}
+body main .section04 .contact {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu04.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .contact ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body main .section04 .work {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu03.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .work ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body main .section04 .sinchae {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu05.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .sinchae ::-webkit-scrollbar {
+    display: none;
+  }
+}
+body main .section04 .leehwa {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu06.png");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+@media screen and (min-width: 768px) {
+  body main .section04 .leehwa ::-webkit-scrollbar {
+    display: none;
+  }
 }
 body aside {
   position: fixed;

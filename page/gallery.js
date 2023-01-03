@@ -39,7 +39,7 @@ elSec.forEach(function (elSection, key) {
 })
 
 const elBtns = document.querySelectorAll('aside button'); 
-    let idx = 0;
+    let num = 0;
 elBtns.forEach(function(btn,key){
     btn.addEventListener('click', function(){
 
@@ -48,9 +48,9 @@ elBtns.forEach(function(btn,key){
 })
 
 function update(key){
-    elBtns[idx].classList.remove('active');  // 저번 키를 지우고
+    elBtns[num].classList.remove('active');  // 저번 키를 지우고
     elBtns[key].classList.add('active');   // 현재 클릭한 새로운 액티브를 넣어줘 
-        idx=key;
+        num=key;
 }
 
     update(0);  // 처음 실행되는 콘텐츠의 값 
@@ -75,3 +75,30 @@ function animation(key){
     console.log(move);
     console.log(elAside);
 }
+
+// 교육자료 
+
+(function(){
+	
+	$(".flex-slide").each(function(){
+		$(this).hover(function(){
+			$(this).find('.flex-title').css({
+				transform: 'rotate(0deg)',
+				top: '10%'
+			});
+			$(this).find('.flex-about').css({
+                opacity: '1'
+			});
+		}, function(){
+            $(this).find('.flex-title').css({
+                transform: 'rotate(90deg)',
+			});
+			$(this).find('.flex-about').css({
+                opacity: '0',
+                top: '15%'
+			});
+		})
+	});
+})();
+
+
