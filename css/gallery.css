@@ -23,7 +23,6 @@ body main {
   left: 0;
   top: 0;
   transition: 1s;
-  position: fixed;
 }
 body main section:nth-child(even) {
   background-color: #000;
