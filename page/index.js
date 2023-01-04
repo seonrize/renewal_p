@@ -4,7 +4,6 @@ const elMain = document.querySelector("main"),
 
       let pos = { y: 0, y2: 0, state: true };
       let offset = [];
-      let idx = 0;
       let y = 0;
 
       elSec.forEach(function (section) {
