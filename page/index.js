@@ -1,4 +1,4 @@
-const elMain = document.querySelector("main"),
+const elMain = document.querySelector(".main-text"),
         elAside = document.querySelector("aside"),
         elSec = document.querySelectorAll("section");
 
@@ -27,32 +27,54 @@ const elMain = document.querySelector("main"),
           animation(key);
         });
       });
+      
 
       function update(key) {
         elBtns[b].classList.remove("active");
         elBtns[key].classList.add("active");
         b = key;
       }
-
       
-      function animation(key) {    
+
+      function animation(key,inter=false) {    
+        console.log(key);
+        
         try {
-          if (e.wheelDelta < 0) {
+          if (inter || event.wheelDelta < 0 ) {
             move = elSec[key].nextElementSibling.offsetTop;
-            key++;
-          } else if (e.wheelDelta > 0) {
+            update(key+1);
+            // key++;
+          } else if (event.wheelDelta > 0) {
             move = elSec[key].previousElementSibling.offsetTop;
-            key--;
+            update(key-1);
+            // key--;
           } else {
             move = elSec[key].offsetTop;
           }
+          
         } catch {}
         elMain.style = `transform:translateY(-${move}px)`;
-
-        update(key);
       }
+      
+      let i=-1; 
+      let timer = setInterval(()=>{
+                  if(i<2){
+                    animation(i,true);
+                    i++;
+                  }
+                },2000);
+
+      // setTimeout(function animation() {
+      //   console.log('animation');
+      //   setTimeout(animation, 1000);
+      // }, 1000);
 
 
+
+      
+
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+
