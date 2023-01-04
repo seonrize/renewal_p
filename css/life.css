@@ -67,6 +67,17 @@ ul.life li span {
   text-align: center;
   padding-top: 12.5px;
   font-weight: 800;
+  position: relative;
+}
+ul.life li span::after {
+  content: "";
+  width: 2px;
+  height: 500px;
+  background-color: #8e8e8e;
+  position: absolute;
+  top: 0%;
+  left: 47%;
+  z-index: -1;
 }
 ul.life li p {
   margin-left: 50px;
@@ -80,9 +91,20 @@ span.date {
   font-weight: 500;
 }
 
+#span-line::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: #000000;
+  position: absolute;
+  top: 0%;
+  left: 47%;
+  z-index: -1;
+}
+
 .book-container {
-  height: 400px;
-  width: 80%;
+  height: 600px;
+  width: 38%;
 }
 
 .book {
