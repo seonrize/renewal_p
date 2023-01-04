@@ -23,9 +23,23 @@ body main {
   left: 0;
   top: 0;
   transition: 1s;
+  position: fixed;
+}
+body main header div.header-box {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body main header div.header-box img {
+  margin-left: 40px;
 }
 body main section:nth-child(even) {
   background-color: #000;
+}
+body main section:nth-child(even) label > span {
+  background-color: #fff;
 }
 body main .section01 {
   width: 100vw;
@@ -287,6 +301,9 @@ body main .section03 .guide .con-box01 .con h3 {
 body main .section03 .guide .con-box01 .con ul {
   font-size: 0.8rem;
 }
+body main .section03 .guide .con-box01 .con ul li {
+  list-style: disc;
+}
 body main .section03 .guide .con:nth-child(even) {
   background-color: #E6E6E6;
 }
@@ -367,12 +384,11 @@ body main .section04 .flex-container {
 }
 body main .section04 .flex-title {
   color: #f1f1f1;
-  position: relative;
   font-size: 2rem;
   margin: 0 auto;
   text-align: center;
   transform: rotate(90deg);
-  top: 50%;
+  padding-top: 5%;
   transition: all 500ms ease;
   font-family: "KCC-Ahnjunggeun";
 }
@@ -382,9 +398,9 @@ body main .section04 .flex-title {
   }
 }
 body main .section04 .flex-about {
+  position: relative;
   opacity: 0;
   color: #f1f1f1;
-  position: relative;
   width: 70%;
   font-size: 1.5vw;
   padding: 5%;
@@ -405,14 +421,23 @@ body main .section04 .flex-about {
 }
 body main .section04 .flex-about button {
   border-style: none;
-  background-color: transparent;
-  color: #fff;
-  border-bottom: 2px solid #fff;
-  font-size: 1.6vw;
-  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #f1f1f1;
+  border: 1.5px solid #f1f1f1;
+  border-radius: 13px;
+  font-size: 1.2vw;
+  /* font-weight: bold; */
+  padding: 10px;
+  margin-top: 44px;
   margin-left: 50%;
   transform: translateX(-50%);
   cursor: pointer;
+  cursor: pointer;
+}
+body main .section04 .flex-about button:hover {
+  color: #AC0A00;
+  border-color: #AC0A00;
+  transition: 0.5s ease-in;
 }
 body main .section04 .flex-slide { /* Safari 6.1+ */ /* IE 10 */
   flex: 1;
@@ -608,15 +633,24 @@ body main .section04 .leehwa {
     display: none;
   }
 }
-body aside {
+body main footer {
+  bottom: 0%;
+  position: fixed;
+}
+body main footer .footer-box {
+  height: 150px;
+}
+
+aside {
   position: fixed;
   right: 1%;
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
 }
-body aside button {
-  background-color: #C0C0C0;
+
+aside button {
+  background-color: #4d0000;
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -625,7 +659,8 @@ body aside button {
   margin: 20px;
   border: none;
 }
-body aside button.active {
+
+aside button.active {
   background-color: #AC0A00;
   transform: scale(1.4);
   transition: 0.4s ease-in-out;

@@ -101,4 +101,22 @@ function animation(key){
 	});
 })();
 
+// headr > meun-bar 현재 페이지 표시
 
+
+let idx = localStorage.idx ;  
+
+function head(){
+    $('header ul li').eq(idx).find('a').addClass('active');
+    console.log(idx);
+
+    $('header ul li').click(function(){
+        let idx = $(this).index();
+        localStorage.idx = idx;
+    })
+
+}
+
+head();   // 함수실행 
+
+// 
