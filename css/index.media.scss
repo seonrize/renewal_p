@@ -11,7 +11,7 @@
       left: 50%;
       top: 40%;
       transform: translate(-50%, -50%);
-      width: 53vw;
+      width: 58vw;
       justify-content: space-between;
     }
 }
@@ -234,18 +234,21 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    aside button {
-      width: 15px;
-      height: 15px;
+    aside button{
+      background-color: #4d0000;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       display: block;
       padding: 0;
-      margin: 15px 0;
+      margin: 20px; 
       border: none;
-      background-color: rgb(255,0,0,0.3);
     }
-    aside button.active {
-      background-color: red;
+    
+    aside button.active{
+      background-color: #eb0c00;
+      transform: scale(1.4);
+      transition: 0.4s ease-in-out;
     }
     
     body {
@@ -738,18 +741,21 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    aside button {
-      width: 15px;
-      height: 15px;
+    aside button{
+      background-color: #4d0000;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       display: block;
       padding: 0;
-      margin: 15px 0;
+      margin: 20px; 
       border: none;
-      background-color: rgb(255,0,0,0.3);
     }
-    aside button.active {
-      background-color: red;
+    
+    aside button.active{
+      background-color: #eb0c00;
+      transform: scale(1.4);
+      transition: 0.4s ease-in-out;
     }
     
     body {
@@ -926,18 +932,21 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    aside button {
-      width: 15px;
-      height: 15px;
+    aside button{
+      background-color: #4d0000;
+      width: 10px;
+      height: 10px;
       border-radius: 50%;
       display: block;
       padding: 0;
-      margin: 15px 0;
+      margin: 20px; 
       border: none;
-      background-color: rgb(255,0,0,0.3);
     }
-    aside button.active {
-      background-color: red;
+    
+    aside button.active{
+      background-color: #eb0c00;
+      transform: scale(1.4);
+      transition: 0.4s ease-in-out;
     }
     
     body {
@@ -1112,18 +1121,21 @@
       top: 50%;
       transform: translateY(-50%);
     }
-    aside button {
+    aside button{
+      background-color: #4d0000;
       width: 10px;
       height: 10px;
       border-radius: 50%;
       display: block;
       padding: 0;
-      margin: 15px 0;
+      margin: 20px; 
       border: none;
-      background-color: rgb(255,0,0,0.3);
     }
-    aside button.active {
-      background-color: red;
+    
+    aside button.active{
+      background-color: #eb0c00;
+      transform: scale(1.4);
+      transition: 0.4s ease-in-out;
     }
     
     body {
