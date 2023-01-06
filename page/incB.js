@@ -1,8 +1,8 @@
 $('body').prepend('<header>');
 $('body').append('<footer>');
 
-$('header').load('./incB.html header > div', head);
-$('footer').load('./incB.html footer > div'); 
+$('header').load('./page/incB.html header > div', head);
+$('footer').load('./page/incB.html footer > div'); 
 
 let idx = sessionStorage.idx ;  
 

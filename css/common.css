@@ -3,15 +3,32 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-html, body, div, span, iframe,
-h1, h2, h3, h4, h5, h6, p, a,
-img, ul, li, nav, video, figure {
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+nav,
+video,
+figure {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
@@ -82,7 +99,7 @@ input[id=icon] + label > span {
   position: absolute;
   content: "";
   display: block;
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   transition: width 300ms ease-out;
   left: 0;
   width: 0;
@@ -95,7 +112,7 @@ input[id=icon] + label > span {
 a.active::after {
   position: absolute;
   content: "";
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   display: block;
   left: 0;
   width: 100%;
@@ -199,7 +216,7 @@ input[id=bar] + label > span {
   position: absolute;
   content: "";
   display: block;
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   transition: width 300ms ease-out;
   left: 0;
   width: 0;
@@ -212,7 +229,7 @@ input[id=bar] + label > span {
 a.active::after {
   position: absolute;
   content: "";
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   display: block;
   left: 0;
   width: 100%;

@@ -94,7 +94,7 @@ ul.life li {
   margin-bottom: 90px;
 }
 ul.life li b {
-  font-size: 1.2rem;
+  font-size: 20px;
   padding: 12px 50px 0 0;
 }
 ul.life li span {
@@ -110,7 +110,7 @@ ul.life li span {
 }
 ul.life li p {
   margin-left: 50px;
-  font-size: 1rem;
+  font-size: 16px;
   line-height: 25px;
 }
 
@@ -123,7 +123,7 @@ span.date {
 .book-container {
   height: 600px;
   width: 100%;
-  background-image: url("../img/life/sub0201_img_03.jpg");
+  background-image: url("../img/life/03.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 100px;
@@ -133,7 +133,6 @@ span.date {
   position: relative;
   perspective: 630px;
   perspective-origin: center 50px;
-  transform: scale(1.5);
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.25));
 }
 
@@ -1081,5 +1080,97 @@ span.date {
     background-image: url("../img/life/page01.png");
     background-position: -388px -2px;
     transform: rotateY(180deg);
+  }
+}
+#topBtn {
+  position: fixed;
+  right: 2%;
+  bottom: 30px;
+  display: none;
+  z-index: 9999;
+  width: 70px;
+  height: 70px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 1px 1px 15px 3px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 300ms;
+}
+#topBtn:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 1800px) {
+  ul.life li b {
+    font-size: 17px;
+  }
+  ul.life li p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 1700px) {
+  ul.life {
+    padding-left: 10.2vw;
+    margin-top: 100px;
+    width: 50%;
+  }
+  ul.life li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  ul.life li b {
+    font-size: 17px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  ul.life li b::after {
+    content: "";
+    width: 55px;
+    height: 3px;
+    background-color: #dd736d;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+  }
+  ul.life li span {
+    display: none;
+  }
+  ul.life li p {
+    font-size: 15px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  ul.life {
+    width: 100%;
+    padding-right: 10.2vw;
+  }
+  ul.life li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  ul.life li b {
+    font-size: 17px;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  ul.life li b::after {
+    content: "";
+    width: 55px;
+    height: 3px;
+    background-color: #dd736d;
+    position: absolute;
+    bottom: -10%;
+    left: 0%;
+  }
+  .svg-container {
+    display: none;
+  }
+  .book {
+    transform: scale(0.85);
   }
 }/*# sourceMappingURL=life.css.map */
