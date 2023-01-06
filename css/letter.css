@@ -1,4 +1,9 @@
-
+/*# sourceMappingURL=letter.css.map */
+/*fonts.css*/
+@font-face {
+  font-family: "ahnjunggeun";
+  src: url(../font/KCC-Ahnjunggeun.otf);
+}
 html {
   scroll-behavior: smooth;
 }
@@ -7,8 +12,16 @@ html {
 }
 #video_area {
   padding: 0;
-  width: 100%;
-  height: 125vh;
+  width: 160vh;
+  height: 86vh;
+  overflow: hidden;
+  position: absolute;
+  z-index: -100;
+}
+#video_area1 {
+  padding: 0;
+  width: 160vh;
+  height: 280vh;
   overflow: hidden;
   position: absolute;
   z-index: -100;
@@ -20,7 +33,8 @@ html {
   position: absolute;
 }
 body {
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   background-color: #000;
   background-image: url("");
   background-repeat: no-repeat;
@@ -35,11 +49,20 @@ input {
   border: none;
   outline: none;
 }
-.retter-title {
-  padding-top: 15vh;
+.letter-title {
+  padding-top: 5vh;
   padding-left: 10.2vw;
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  align-items: center;
+  color: #ddd;
+  display: flex;
+}
+.letter-title1 {
+  padding-top: 20vh;
+  padding-left: 10.2vw;
+  font-weight: bold;
+  font-size: 2.5rem;
   align-items: center;
   color: #ddd;
   display: flex;
@@ -55,7 +78,7 @@ input {
 }
 .title-box {
   width: 8px;
-  height: 26px;
+  height: 22px;
   background-color: #ac0a00;
   border-radius: 25px;
 }
@@ -66,162 +89,19 @@ input {
   padding-left: 9.6vw;
 }
 .container {
-  background-image: url("./img/main-retter.svg");
+  background-image: url("../img/letter/main-letter.svg");
   background-repeat: no-repeat;
   background-position: 50% 10%;
   background-size: 100%;
   width: 770px;
   height: 640px;
 }
-@media (max-width: 824px) {
-  .container {
-    width: 570px;
-    height: 440px;
-  }
-  .input-style {
-    margin-top: 5.3rem !important;
-    margin-left: 1.4rem !important;
-    max-width: 120px !important;
-    font-size: 11px;
-  }
-  .input-area1 {
-    margin-left: 4.9rem !important;
-    margin-top: 1.4rem !important;
-  }
-  .input-style1 {
-    line-height: 297% !important;
-    width: 419px !important;
-    height: 190px !important;
-    font-size: 11px;
-  }
-  .send-area {
-    margin-top: 2rem;
-    margin-right: 9rem !important;
-  }
-  .button-style {
-    height: 30px !important;
-    width: 150px !important;
-  }
-  .plus {
-    margin-top: 0.3rem !important;
-    font-size: 12px !important;
-  }
-  .button-style1 {
-    width: 120px !important;
-    line-height: 50px !important;
-  }
-  .move-font {
-    font-size: 14px;
-  }
-  .task-page {
-    margin-top: 13rem;
-  }
-}
-@media (max-width: 640px) {
-  .retter-title {
-    font-size: 1.5rem;
-    padding-top: 30vh;
-  }
-  .title {
-    font-size: 0.8rem;
-  }
-  .container {
-    width: 380px;
-    height: 260px;
-  }
-  .input-area {
-    display: flex;
-    margin-left: 1.4rem !important;
-    width: 100%;
-    height: 24%;
-  }
-  .input-style {
-    margin-top: 2.9rem !important;
-    margin-left: 1.9rem !important;
-    max-width: 70px !important;
-    font-size: 7px;
-  }
-  .input-area1 {
-    margin-left: 3.3rem !important;
-    margin-top: 1.1rem !important;
-  }
-  .input-style1 {
-    font-size: 7px;
-    line-height: 216% !important;
-    width: 275px !important;
-    height: 126px !important;
-  }
-  .button-style {
-    height: 20px !important;
-    width: 80px !important;
-  }
-  .send-area {
-    margin-top: 1rem !important;
-    margin-right: 6rem !important;
-  }
-  .plus {
-    margin-top: 0rem !important;
-    font-size: 5px !important;
-  }
-  .button-style1 {
-    width: 100px !important;
-    line-height: 40px !important;
-  }
-  .move-font {
-    font-size: 12px;
-  }
-  .img-con3 {
-    width: 300px !important;
-  }
-  .img-con4 {
-    margin-top: 3.7rem;
-    width: 300px !important;
-  }
-  .task {
-    width: 240px !important;
-    height: 220px !important;
-  }
-  .button-box {
-    height: 40px !important;
-  }
-  .div-flex {
-    margin-left: 0.9rem !important;
-    margin-bottom: 0.5rem !important;
-  }
-  .div-flex1 {
-    margin-left: 0.8rem !important;
-  }
-  .div-flex1 > textarea {
-    line-height: 145% !important;
-    width: 180px !important;
-    height: 82px !important;
-  }
-  .toFrom {
-    font-size: 0.6rem !important;
-  }
-  .task-page {
-    margin-top: 13rem;
-  }
-  .title-box {
-    width: 3px;
-    height: 14px;
-  }
-  .task-area {
-    height: 80vh !important;
-}
-.task:hover {
-  margin-bottom: 20rem !important;
-}
-.img-con4:hover + .task {
-  margin-bottom: 20rem !important;
-}
-}
 .task-area {
   display: flex;
-  height: 90vh;
+  height: 80vh;
 }
 .task {
-  background-image: url("./img/main-retter.svg");
+  background-image: url("../img/letter/main-letter.svg");
   background-size: cover;
   background-position: center;
   width: 290px;
@@ -233,18 +113,19 @@ input {
 .task:hover {
   transition: 0.8s;
   transform: rotate(0deg);
-  margin-bottom: 30rem;
+  margin-bottom: 25rem;
   margin-right: 0.4rem;
   z-index: 100;
 }
-.toFrom {
+.toForm {
   display: flex;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  font-family: "ahnjunggeun";
 }
 .button-box {
   display: flex;
   justify-content: end;
-  height: 45px;
+  height: 43px;
 }
 .button-box button {
   border: none;
@@ -266,7 +147,7 @@ input {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-left: 1.3rem;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 .div-flex1 {
   display: flex;
@@ -277,9 +158,10 @@ input {
   margin-left: 1.2rem;
 }
 .div-flex1 > textarea {
-  line-height: 148%;
-  width: 260px;
-  height: 120px;
+  line-height: 122%;
+  width: 240px;
+  height: 118px;
+  font-family: "ahnjunggeun";
 }
 .task-tabs div {
   cursor: pointer;
@@ -299,15 +181,19 @@ input {
   max-width: 150px;
   width: 100%;
   font-weight: lighter;
-  margin-top: 7.9rem;
+  margin-top: 7.5rem;
   margin-left: 3.1rem;
   height: 28px;
+  font-family: "ahnjunggeun";
+  font-size: 1.3rem;
 }
 .input-style1 {
   font-weight: lighter;
-  line-height: 330%;
+  line-height: 210%;
   width: 560px;
   height: 260px;
+  font-family: "ahnjunggeun";
+  font-size: 1.3rem;
 }
 textarea {
   background-color: transparent;
@@ -316,10 +202,10 @@ textarea {
   outline: none;
 }
 .button-style {
-  border: 1px solid rgb(172, 150, 90);
-  background-color: rgb(172, 146, 90);
-  height: 40px;
-  width: 200px;
+  border: 1px solid rgb(80, 77, 77);
+  background-color: rgb(80, 77, 77);
+  width: 150px;
+  height: 42px;
   display: flex;
   justify-content: center;
   cursor: pointer;
@@ -329,7 +215,7 @@ textarea {
   position: relative;
   text-decoration: 0;
   display: block;
-  width: 150px;
+  width: 130px;
   line-height: 60px;
   text-align: center;
   color: #fff;
@@ -358,7 +244,7 @@ span {
 .button-style1:hover .masker {
   height: 100%;
 }
-.retter-move {
+.letter-move {
   display: block;
   position: fixed;
   bottom: 2rem;
@@ -366,13 +252,15 @@ span {
   z-index: 3500;
   cursor: pointer;
 }
-.retter-move-font {
+.letter-move-font {
   color: #ddd;
   margin: 0 auto;
 }
 .plus {
   color: rgb(255, 255, 255);
-  margin-top: 0.5rem;
+  margin-top: 0.3rem;
+  font-family: "ahnjunggeun";
+  font-size: 1.3rem;
 }
 .input-area {
   display: flex;
@@ -382,7 +270,7 @@ span {
 }
 .input-area1 {
   margin-left: 6.6rem;
-  margin-top: 1.6rem;
+  margin-top: 1.2rem;
   width: 100%;
   height: 24%;
 }
@@ -395,8 +283,8 @@ span {
 .img-con {
   position: absolute;
   z-index: -10;
-  margin-left: 90rem;
-  margin-top: 5.8rem;
+  margin-left: 91rem;
+  margin-top: 1rem;
 }
 .hands {
   z-index: -10;
@@ -407,7 +295,7 @@ span {
 .img-con1 {
   position: absolute;
   z-index: -10;
-  margin-top: 30rem;
+  margin-top: 25rem;
 }
 .Vector {
   z-index: -10;
@@ -416,7 +304,7 @@ span {
 .img-con2 {
   position: absolute;
   z-index: -10;
-  margin-top: 45rem;
+  margin-top: 40rem;
 }
 .Vector1 {
   z-index: -10;
@@ -427,7 +315,7 @@ span {
   z-index: -10;
   width: 350px;
 }
-.retter01 {
+.letter01 {
   z-index: -10;
   position: relative;
 }
@@ -438,14 +326,14 @@ span {
   cursor: pointer;
   width: 350px;
 }
-.retter02 {
+.letter02 {
   z-index: 10;
   position: relative;
 }
 .img-con4:hover + .task {
   transition: 0.8s;
   transform: rotate(0deg);
-  margin-bottom: 30rem;
+  margin-bottom: 25rem;
   margin-right: 0.4rem;
 }
 @keyframes motion {
@@ -458,10 +346,12 @@ span {
 }
 .material-symbols-outlined {
   margin-top: 0.2rem;
-  font-size: 1.5rem !important;
+  font-size: 2rem;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
-
+#trash-icon {
+  font-size: 1.5rem !important;
+}
 /* swiper */
 .swiper {
   width: 95%;
@@ -489,4 +379,276 @@ span {
   height: 100%;
   object-fit: cover;
 }
-
+/* 반응형 */
+@media (max-width: 1724px) {
+  .button-style1 {
+    width: 110px !important;
+    line-height: 50px !important;
+  }
+  .move-font {
+    font-size: 14px;
+}
+}
+@media (max-width: 824px) {
+  .letter-title {
+    font-size: 2rem;
+  }
+  .letter-title1 {
+    font-size: 2rem;
+  }
+  .title {
+    font-size: 1rem;
+  }
+  .title-box {
+    width: 5px;
+    height: 16px;
+    margin-top: 0.1rem;
+  }
+  .container {
+    width: 570px;
+    height: 440px;
+  }
+  .input-style {
+    margin-top: 5.1rem !important;
+    margin-left: 1.4rem !important;
+    max-width: 120px !important;
+    font-size: 15px;
+  }
+  .input-area1 {
+    margin-left: 4.9rem !important;
+    margin-top: 1.2rem !important;
+  }
+  .input-style1 {
+    font-size: 15px;
+    line-height: 215% !important;
+    width: 410px !important;
+    height: 190px !important;
+  }
+  .send-area {
+    margin-top: 2rem !important;
+    margin-right: 9rem !important;
+  }
+  .button-style {
+    height: 30px !important;
+    width: 100px !important;
+  }
+  .plus {
+    margin-top: 0.3rem !important;
+    font-size: 12px !important;
+  }
+  .task-page {
+    margin-top: 13rem;
+  }
+  .material-symbols-outlined {
+    font-size: 1.5rem;
+  }
+  .task-area {
+    height: 86vh !important;
+  }
+}
+@media (max-width: 640px) {
+  .letter-title {
+    font-size: 1.6rem;
+    padding-top: 15vh;
+  }
+  .letter-title1 {
+    font-size: 1.6rem;
+    padding-top: 30vh;
+  }
+  .title {
+    font-size: 0.9rem;
+  }
+  .container {
+    width: 100%;
+    max-width: 380px;
+    min-width: 380px;
+    height: 280px;
+  }
+  .input-area {
+    display: flex;
+    margin-left: 1.4rem !important;
+    width: 100%;
+    height: 24%;
+  }
+  .input-style {
+    margin-top: 2.9rem !important;
+    margin-left: 1.9rem !important;
+    max-width: 70px !important;
+    font-size: 0.8rem;
+  }
+  .input-area1 {
+    margin-left: 3.3rem !important;
+    margin-top: 0.8rem !important;
+  }
+  .input-style1 {
+    font-size: 0.8rem;
+    line-height: 170% !important;
+    width: 275px !important;
+    height: 126px !important;
+  }
+  .button-style {
+    height: 22px !important;
+    width: 80px !important;
+  }
+  .send-area {
+    margin-top: 1.3rem !important;
+    margin-right: 6rem !important;
+  }
+  .plus {
+    margin-top: 0.1rem !important;
+    font-size: 11px !important;
+  }
+  .button-style1 {
+    width: 100px !important;
+    line-height: 40px !important;
+  }
+  .move-font {
+    font-size: 12px;
+  }
+  .img-con3 {
+    width: 300px !important;
+  }
+  .img-con4 {
+    margin-top: 3.7rem;
+    width: 300px !important;
+  }
+  .task {
+    width: 249px !important;
+    height: 225px !important;
+  }
+  .button-box {
+    height: 37px !important;
+  }
+  .div-flex {
+    margin-left: 1.1rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .div-flex1 {
+    margin-left: 1rem !important;
+  }
+  .div-flex1 > textarea {
+    line-height: 131% !important;
+    width: 210px !important;
+    height: 100px !important;
+  }
+  .toForm {
+    font-size: 0.8rem !important;
+  }
+  .task-page {
+    margin-top: 13rem;
+  }
+  .title-box {
+    width: 3px;
+    height: 14px;
+    margin-top: 0.1rem;
+    margin-left: 0.1rem;
+  }
+  .task-area {
+    height: 80vh !important;
+  }
+  .task:hover {
+    margin-bottom: 20rem !important;
+  }
+  .img-con4:hover + .task {
+    margin-bottom: 20rem !important;
+  }
+  .button-box button {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  .material-symbols-outlined {
+    font-size: 1.3rem !important;
+  }
+  #trash-icon {
+    font-size: 1.3rem !important;
+    margin-top: 0.3rem;
+  }
+  .button-box button {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 460px) {
+  .con-area {
+    padding-left: 9vw !important;
+  }
+  .letter-title {
+    padding-left: 9vw !important;
+  }
+  .letter-title1 {
+    padding-left: 9vw !important;
+  }
+  .title {
+    padding-left: 9vw !important;
+  }
+}
+@media (max-width: 440px) {
+  .con-area {
+    padding-left: 7vw !important;
+  }
+  .letter-title {
+    padding-left: 7vw !important;
+  }
+  .letter-title1 {
+    padding-left: 7vw !important;
+  }
+  .title {
+    padding-left: 7vw !important;
+  }
+}
+@media (max-width: 420px) {
+  .con-area {
+    padding-left: 4.8vw !important;
+  }
+  .letter-title {
+    padding-left: 4.8vw !important;
+  }
+  .letter-title1 {
+    padding-left: 4.8vw !important;
+  }
+  .title {
+    padding-left: 4.8vw !important;
+  }
+}
+@media (max-width: 400px) {
+  .con-area {
+    padding-left: 2.3vw !important;
+  }
+  .letter-title {
+    padding-left: 2.3vw !important;
+  }
+  .letter-title1 {
+    padding-left: 2.3vw !important;
+  }
+  .title {
+    padding-left: 2.3vw !important;
+  }
+}
+@media (max-width: 390px) {
+  .con-area {
+    padding-left: 1.5vw !important;
+  }
+  .letter-title {
+    padding-left: 1.5vw !important;
+  }
+  .letter-title1 {
+    padding-left: 1.5vw !important;
+  }
+  .title {
+    padding-left: 1.5vw !important;
+  }
+}
+@media (max-width: 377px) {
+  .con-area {
+    padding-left: 0vw !important;
+  }
+  .letter-title {
+    padding-left: 0vw !important;
+  }
+  .letter-title1 {
+    padding-left: 0vw !important;
+  }
+  .title {
+    padding-left: 0vw !important;
+  }
+}

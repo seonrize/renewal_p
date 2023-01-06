@@ -42,6 +42,7 @@ function addTask() {
     Swal.fire({
       icon: "warning",
       text: "이름을 입력하세요.",
+      width: "360px",
     });
     return;
   }
@@ -49,6 +50,7 @@ function addTask() {
     Swal.fire({
       icon: "warning",
       text: "메세지를 입력하세요.",
+      width: "360px",
     });
     return;
   }
@@ -57,9 +59,10 @@ function addTask() {
   document.getElementById("task-input1", "add-button").value = "";
   Swal.fire({
     icon: "success",
-    title: "편지가 전송되었습니다.",
+    title: "전송 완료.",
     showConfirmButton: false,
     timer: 900,
+    width: "360px",
   });
   render();
 }
@@ -71,22 +74,22 @@ function render() {
   for (let i = 0; i < list.length; i++) {
     resultHTML += `<div class="swiper-slide" id="${list[i].id}" >
     <div class="img-con3" id="${list[i].id}">
-    <img class="retter01" src="./img/letter01.png">
+    <img class="letter01" src="../img/letter/letter01.png">
     </div>
     <div class="img-con4" id="${list[i].id}">
-    <img class="retter02" src="./img/letter02.png">
+    <img class="letter02" src="../img/letter/letter02.png">
     </div>
       <div class="task">
       <div class="button-box">  
-      <button class="trash" onclick="deleteTask('${list[i].id}')" tabindex="-1"><span class="material-symbols-outlined">
+      <button class="trash" onclick="deleteTask('${list[i].id}')" tabindex="-1"><span class="material-symbols-outlined" id="trash-icon">
       delete
       </span></button>
       </div>
       <div class="div-flex">
-      <span class="toFrom">${list[i].taskContent}</span> 
+      <span class="toForm">${list[i].taskContent}</span> 
       </div>
       <div class="div-flex1">
-      <textarea class="toFrom" readonly="readonly">${list[i].taskContent1}</textarea> 
+      <textarea class="toForm" readonly="readonly">${list[i].taskContent1}</textarea> 
       </div>
       </div>
   </div>`;
@@ -99,6 +102,7 @@ function deleteTask(id) {
   Swal.fire({
     title: "삭제하시겠습니까?",
     icon: "warning",
+    width: "360px",
     showCancelButton: true,
     confirmButtonColor: "#3085d6",
     cancelButtonColor: "#d33",
@@ -146,11 +150,11 @@ function swiper() {
         slidesPerView: 1,
         spaceBetween: 30,
       },
-      768: {
-        slidesPerView: 1,
+      1024: {
+        slidesPerView: 2,
         spaceBetween: 20,
       },
-      1024: {
+      1420: {
         slidesPerView: 3,
         spaceBetween: 10,
         slidesPerGroup: 1,

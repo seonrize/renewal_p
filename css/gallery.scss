@@ -15,7 +15,9 @@ a{
     color: #fff;
 }
 
-
+footer{
+    display: none;
+}
 body{   
     margin:0;
     padding:0;
@@ -26,7 +28,7 @@ body{
         left: 0;
         top: 0;
         transition: 1s;
-        // position: fixed;
+        position: fixed;
 
             section:nth-child(even){
                 background-color: #000;
