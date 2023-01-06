@@ -18,7 +18,9 @@ let swiper = new Swiper(".mySwiper", {
 //book
 const book = document.querySelector(".iframe-book"),
 slide = document.querySelectorAll(".link"),
-elSwiper = document.querySelector('.swiper');
+elSwiper = document.querySelector('.swiper'),
+spanz = document.querySelector(".span-z"),
+body = document.querySelector("body");
 
 const bookLink = [
                     "http://www.ahnjunggeun.or.kr/work/20221227_page_ebook/index.html",
@@ -41,10 +43,11 @@ slide.forEach(function(i,key){
 })
 
 book.onclick = function(e){
-    console.log("닫기",e);
     if(e.target.className == "x"){
         book.style.display = "none";
         elSwiper.style.zIndex = "0";
+        body.style.overflow = "visible"
+        // spanz.style.zIndex = "0";
     }
 }
 
@@ -54,8 +57,14 @@ function Bo(m){
     
     book.style.display = "block";
     elSwiper.style.zIndex = "-1";
+    // spanz.style.zIndex = "-1";
+    body.style.overflow = "hidden"
+
     elBook.innerHTML =  `
-                        <div class="x">x</div>
+                        <div >
+                            <img src="../img/life/close.png" class="x">
+                        
+                        </div>
                         <iframe 
                             src="${bookLink[m]}" 
                             width="${window.innerWidth*0.8}" height="${window.innerHeight*0.8}" 
@@ -63,3 +72,32 @@ function Bo(m){
                             transform: translate(-50%,-50%); ">
                         </iframe>`
 }
+
+
+// svg
+const content1 = document.querySelector('.content-path1');
+    const content2 = document.querySelector('.content-path2');
+    const path1 = document.querySelector('.path2');
+    const path2 = document.querySelector('.path3');
+    const path1Length = path1.getTotalLength();
+    const path2Length = path2.getTotalLength();
+
+    path1.style.strokeDasharray  = path1Length + ' ' + path1Length
+    path1.style.strokeDashoffset = calcDashoffset(window.innerHeight * 0.8, content1, path1Length)
+    
+    path2.style.strokeDasharray  = path2Length + ' ' + path2Length
+    path2.style.strokeDashoffset = path2Length
+
+    function calcDashoffset(scrollY, element, length) {
+        const ratio = (scrollY - element.offsetTop) / element.offsetHeight
+        const value = length - (length * ratio)
+        return value < 0 ? 0 : value > length ? length : value
+    }
+
+    function scrollHandler() {
+        const scrollY = window.scrollY + (window.innerHeight * 0.8)
+        path1.style.strokeDashoffset = calcDashoffset(scrollY, content1, path1Length)
+        path2.style.strokeDashoffset = calcDashoffset(scrollY, content2, path2Length)
+    }
+
+    window.addEventListener('scroll', scrollHandler)
