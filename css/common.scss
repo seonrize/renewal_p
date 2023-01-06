@@ -304,4 +304,112 @@ div.footer-box{
         }
     }
 }
+@media screen and (min-width:1070px) and (max-width:1145px){
+    div.footer-box{
+        width: 100%;
+        height: 250px;
+        background-color: #000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        img{
+            margin-left: 40px;
+        }
+        .footer-text{
+            color: rgb(231, 231, 231);
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            margin-right: 40px;
+            p{
+                padding: 5px 0;
+            }
+        }
+    }
+        
+    
+}
+@media screen and (min-width:800px) and (max-width:1069px){
+    div.footer-box{
+        width: 100%;
+        height: 250px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            margin:0 auto;
+        }
+        .footer-text{
+            color: rgb(231, 231, 231);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin:0 auto;
+            p{
+                padding: 5px 0;
+            }
+        }
+    }
+        
+    
+}
+@media screen and (min-width:679px) and (max-width:799px){
+    div.footer-box{
+        width: 100%;
+        height: 250px;
+        background-color: #000;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        img{
+            margin:0 auto;
+            scale: 0.9;
+        }
+        .footer-text{
+            color: rgb(231, 231, 231);
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            align-items: center;
+            margin:0 auto;
+            p{
+                padding: 5px 0;
+                font-size: 0.9rem;
+            }
+        }
+    }
+        
+    
+}
+@media screen and (max-width:678px){
+    div.footer-box{
+        width: 100%;
+        padding-bottom: 10%;
+        height: 100%;
+        background-color: #000;
+        display: block;
+    
+        img{
+            margin: 40px 0 30px 40px;
+        }
+        .footer-text{
+            color: rgb(231, 231, 231);
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 40px;
+            p{
+                padding: 5px 0;
+            }
+        }
+    }
+        
+    
+}
+
+
 
