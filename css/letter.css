@@ -103,7 +103,7 @@ input {
 }
 
 .container {
-  background-image: url("./img/letter/main-letter.svg");
+  background-image: url("../img/letter/frame.png");
   background-repeat: no-repeat;
   background-position: 50% 10%;
   background-size: 100%;
@@ -117,7 +117,7 @@ input {
 }
 
 .task {
-  background-image: url("./img/letter/main-letter.svg");
+  background-image: url("../img/letter/frame.png");
   background-size: cover;
   background-position: center;
   width: 290px;
