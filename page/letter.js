@@ -86,7 +86,7 @@ function render() {
       </span></button>
       </div>
       <div class="div-flex">
-      <span class="toForm">${list[i].taskContent}</span> 
+      <span class="toForm">${list[i].taskContent}</span>  
       </div>
       <div class="div-flex1">
       <textarea class="toForm" readonly="readonly">${list[i].taskContent1}</textarea> 
