@@ -626,7 +626,7 @@ body .section04 textarea {
   width: 100%;
 }
 body .section04 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu04.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu04.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -637,7 +637,7 @@ body .section04 .contact {
   }
 }
 body .section04 .work {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu03.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu03.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -648,7 +648,7 @@ body .section04 .work {
   }
 }
 body .section04 .sinchae {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu05.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu05.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -659,7 +659,7 @@ body .section04 .sinchae {
   }
 }
 body .section04 .leehwa {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu06.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu06.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
