@@ -64,11 +64,6 @@ const elMain = document.querySelector(".main-text"),
                   }
                 },2000);
 
-      // setTimeout(function animation() {
-      //   console.log('animation');
-      //   setTimeout(animation, 1000);
-      // }, 1000);
-
 
 
       

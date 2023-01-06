@@ -34,11 +34,10 @@ div.iframe-book{
     justify-content: center; align-items: center;
     background-color: rgba(0,0, 0, 0.6);
     display: none;
+    overflow: hidden;
 }
 
-div.x{
-    font-size: 4rem;
-    color: #000;
+.x{
     position: absolute;
     top: 18%;
     right: 15%;
@@ -47,12 +46,46 @@ div.x{
     cursor: pointer;
 }
 
+.pad{
+    margin-bottom: 50px;
+}
+
+.m{
+    margin-top: 150px;
+}
+
+section.year{
+    display: flex;
+
+
+    .svg-container{
+        width: 40%;
+        .path {
+            fill: none;
+            stroke: #777777;
+            stroke-width: 1.5px;
+        }
+        .path2 {
+            stroke: #777777;
+        }
+
+        @keyframes drawPath1 {
+            0% {
+                stroke-dashoffset: 14023;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+    }
+}
 ul.life{
     padding-left: 10.2vw;
     margin-top: 100px;
+    width: 60%;
     li{
         display: flex;
-        margin-bottom: 100px;
+        margin-bottom: 90px;
 
         b{
             font-size: 1.2rem;
@@ -69,16 +102,16 @@ ul.life{
             padding-top: 12.5px;
             font-weight: 800;
             position: relative;
-            &::after{
-                content: "";
-                width: 2px;
-                height: 500px;
-                background-color: #8e8e8e;
-                position: absolute;
-                top: 0%;
-                left: 47%;
-                z-index: -1;
-            }
+            // &::after{
+            //     content: "";
+            //     width: 2px;
+            //     height: 500px;
+            //     background-color: #8e8e8e;
+            //     position: absolute;
+            //     top: 0%;
+            //     left: 47%;
+            //     z-index: -1;
+            // }
         }
         p{
             margin-left: 50px;
@@ -93,18 +126,6 @@ span.date{
     font-size: 0.9rem; 
     font-weight: 500;
 }
-
-#span-line::after{
-    content: "";
-    width: 2px;
-    height: 10px;
-    background-color: #000000;
-    position: absolute;
-    top: 0%;
-    left: 47%;
-    z-index: -1;
-}
-
 
 
 $bookAngle: 60deg;
@@ -121,14 +142,19 @@ $images:
 
 .book-container{
     height: 600px;
-    width: 38%; 
+    width: 100%; 
+    //background-color: #fce0ad;
+    background-image: url("../img/life/sub0201_img_03.jpg") ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
 }
 
 .book {
     position: relative;
     perspective: 630px;
     perspective-origin: center 50px; 
-    transform: scale(1.2);
+    transform: scale(1.5);
     filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.25));
 }
 
@@ -289,3 +315,16 @@ $images:
         #{13 + ($i * 20)}% { background-image: nth($images, ($i + 2)); background-position: -388px -2px; transform: rotateY(180deg); }
     }
 }
+
+// .a-link{
+//     width: 150px;
+//     height: 50px;
+//     border-radius: 50px;
+//     background-color: #AC0A00;
+//     a{
+//         text-decoration: none;
+//         color: #ffffff;
+//         font-size: 1rem;
+//         font-weight: bold;
+//     }
+// }

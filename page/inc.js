@@ -14,5 +14,4 @@ function head(){
         let idx = $(this).index();
         sessionStorage.idx = idx;
     })
-
 }
