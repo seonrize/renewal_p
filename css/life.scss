@@ -124,18 +124,18 @@ $speed: 5s;
 $borderColor: rgb(182, 182, 182);
 
 $images:
-    url('../img/life/page01.png'),
-    url('../img/life/page02.png'),
-    url('../img/life/page03.png'),
-    url('../img/life/page04.png'),
-    url('../img/life/page05.png'), 
-    url('../img/life/page01.png');
+    url('./img/life/page01.png'),
+    url('./img/life/page02.png'),
+    url('./img/life/page03.png'),
+    url('./img/life/page04.png'),
+    url('./img/life/page05.png'), 
+    url('./img/life/page01.png');
 
 .book-container{
     height: 600px;
     width: 100%; 
     //background-color: #fce0ad;
-    background-image: url("../img/life/03.jpg") ;
+    background-image: url("./img/life/03.jpg") ;
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 100px;

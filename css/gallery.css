@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url("./common.css");
+@import url("./css/common.css");
 @font-face {
   font-family: "KCC-Ahnjunggeun";
-  src: url("../fonts/KCC-Ahnjunggeun.otf") format("truetype");
+  src: url("./fonts/KCC-Ahnjunggeun.otf") format("truetype");
 }
 * {
   box-sizing: content-box;
@@ -238,7 +238,7 @@ body main .section02 .inner01:hover::after {
   height: 9.7vh;
   border-radius: 5px;
   position: absolute;
-  background: url("../img/gallery/2f.jpg");
+  background: url("./img/gallery/2f.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -251,7 +251,7 @@ body main .section02 .inner02:hover::after {
   height: 9.7vh;
   border-radius: 5px;
   position: absolute;
-  background: url("../img/gallery/1f.jpg");
+  background: url("./img/gallery/1f.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -264,7 +264,7 @@ body main .section02 .inner03:hover::after {
   height: 9.7vh;
   border-radius: 5px;
   position: absolute;
-  background: url("../img/gallery/b1f.jpg");
+  background: url("./img/gallery/b1f.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -277,7 +277,7 @@ body main .section02 .inner04:hover::after {
   height: 9.7vh;
   border-radius: 5px;
   position: absolute;
-  background: url("../img/gallery/b2f.jpg");
+  background: url("./img/gallery/b2f.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -496,7 +496,7 @@ body .section04 .flex-slide:hover {
   flex-grow: 6;
 }
 body .section04 .home {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu01.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu01.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -606,7 +606,7 @@ body .section04 .flex-about-home {
   }
 }
 body .section04 .about {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu02.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu02.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -626,7 +626,7 @@ body .section04 textarea {
   width: 100%;
 }
 body .section04 .contact {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu04.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu04.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -637,7 +637,7 @@ body .section04 .contact {
   }
 }
 body .section04 .work {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu03.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu03.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -648,7 +648,7 @@ body .section04 .work {
   }
 }
 body .section04 .sinchae {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu05.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu05.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -659,7 +659,7 @@ body .section04 .sinchae {
   }
 }
 body .section04 .leehwa {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("../img/gallery/edu06.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url("./img/gallery/edu06.png");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

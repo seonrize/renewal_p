@@ -74,10 +74,10 @@ function render() {
   for (let i = 0; i < list.length; i++) {
     resultHTML += `<div class="swiper-slide" id="${list[i].id}" >
     <div class="img-con3" id="${list[i].id}">
-    <img class="letter01" src="../img/letter/letter01.png">
+    <img class="letter01" src="./img/letter/letter01.png">
     </div>
     <div class="img-con4" id="${list[i].id}">
-    <img class="letter02" src="../img/letter/letter02.png">
+    <img class="letter02" src="./img/letter/letter02.png">
     </div>
       <div class="task">
       <div class="button-box">  
