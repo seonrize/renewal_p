@@ -14,6 +14,10 @@ a {
   color: #fff;
 }
 
+footer {
+  display: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -24,7 +28,6 @@ body main {
   top: 0;
   transition: 1s;
   position: fixed;
-
 }
 body main header div.header-box {
   width: 100%;

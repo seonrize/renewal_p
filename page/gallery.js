@@ -60,16 +60,14 @@ function animation(key){
         if (event.wheelDelta < 0) {
             move = elSec[key].nextElementSibling.offsetTop;
             key ++;
-        } else if(event.wheelDelta > 0) {                         // wheel 했을때 (if, else if)
+        } else if(event.wheelDelta > 0) {                         
             move = elSec[key].previousElementSibling.offsetTop;
             key --;
         }else{
-            move = elSec[key].offsetTop;     //click 했을 때 
+            move = elSec[key].offsetTop;     
         }
     } catch { }
     update(key);
-
-
 
     elMain.style = `transform:translateY(-${move}px)`;
     console.log(move);
