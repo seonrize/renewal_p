@@ -213,6 +213,10 @@ body{
                                     bottom: -2%;
                                     transform: translateX(140%); 
                                 }
+                                .character{
+                                    position: absolute;
+                                    z-index: -99999;
+                                }
                             }
                         }
                         .inner:hover{

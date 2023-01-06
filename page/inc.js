@@ -4,7 +4,7 @@ $('body').append('<footer>');
 $('header').load('/page/inc.html header > div', head);
 $('footer').load('/page/inc.html footer > div'); 
 
-let idx = localStorage.idx ;  
+let idx = sessionStorage.idx ;  
 
 function head(){
     $('header ul li').eq(idx).find('a').addClass('active');
@@ -12,7 +12,7 @@ function head(){
 
     $('header ul li').click(function(){
         let idx = $(this).index();
-        localStorage.idx = idx;
+        sessionStorage.idx = idx;
     })
 
 }

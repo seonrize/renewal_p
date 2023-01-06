@@ -104,7 +104,7 @@ function animation(key){
 // headr > meun-bar 현재 페이지 표시
 
 
-let idx = localStorage.idx ;  
+let idx = sessionStorage.idx ;  
 
 function head(){
     $('header ul li').eq(idx).find('a').addClass('active');
@@ -112,7 +112,7 @@ function head(){
 
     $('header ul li').click(function(){
         let idx = $(this).index();
-        localStorage.idx = idx;
+        sessionStorage.idx = idx;
     })
 
 }

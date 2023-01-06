@@ -187,6 +187,10 @@ body main .section02 .floor .f .move .elevator .right-door {
   bottom: -2%;
   transform: translateX(140%);
 }
+body main .section02 .floor .f .move .elevator .character {
+  position: absolute;
+  z-index: -99999;
+}
 body main .section02 .floor .f .inner:hover {
   font-weight: bold;
   cursor: pointer;
