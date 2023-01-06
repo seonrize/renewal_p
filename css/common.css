@@ -3,22 +3,45 @@
   font-family: "Noto Sans KR", sans-serif;
 }
 
-html, body, div, span, iframe,
-h1, h2, h3, h4, h5, h6, p, a,
-img, ul, li, nav, video, figure {
+html,
+body,
+div,
+span,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+img,
+ul,
+li,
+nav,
+video,
+figure {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
 }
 
 a {
   text-decoration: none;
 }
-
+.header-middle {
+  width: 100%;
+  min-width: 100px;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  margin-left: 5rem;
+}
 div.header-box {
   width: 100%;
   height: 100px;
@@ -28,13 +51,15 @@ div.header-box {
 }
 div.header-box img {
   margin-left: 40px;
+  width: 100%;
+  min-width: 100px;
 }
 
-input[id=icon] {
+input[id="icon"] {
   display: none;
 }
 
-input[id=icon] + label {
+input[id="icon"] + label {
   position: relative;
   display: block;
   width: 40px;
@@ -43,7 +68,7 @@ input[id=icon] + label {
   cursor: pointer;
 }
 
-input[id=icon] + label > span {
+input[id="icon"] + label > span {
   position: absolute;
   display: block;
   width: 100%;
@@ -82,7 +107,7 @@ input[id=icon] + label > span {
   position: absolute;
   content: "";
   display: block;
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   transition: width 300ms ease-out;
   left: 0;
   width: 0;
@@ -95,36 +120,36 @@ input[id=icon] + label > span {
 a.active::after {
   position: absolute;
   content: "";
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   display: block;
   left: 0;
   width: 100%;
 }
 
-input[id=icon] + label > span:nth-child(1) {
+input[id="icon"] + label > span:nth-child(1) {
   top: 0px;
 }
 
-input[id=icon] + label > span:nth-child(2) {
+input[id="icon"] + label > span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id=icon] + label > span:nth-child(3) {
+input[id="icon"] + label > span:nth-child(3) {
   bottom: 0px;
 }
 
-input[id=icon]:checked + label > span:nth-child(1) {
+input[id="icon"]:checked + label > span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
   background-color: #000;
 }
 
-input[id=icon]:checked + label > span:nth-child(2) {
+input[id="icon"]:checked + label > span:nth-child(2) {
   opacity: 0;
 }
 
-input[id=icon]:checked + label > span:nth-child(3) {
+input[id="icon"]:checked + label > span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
   background-color: #000;
@@ -132,7 +157,8 @@ input[id=icon]:checked + label > span:nth-child(3) {
 
 #icon + label + #header {
   position: fixed;
-  width: 600px;
+  max-width: 600px;
+  width: 100%;
   height: 100%;
   background: rgb(255, 255, 255);
   top: 0px;
@@ -147,11 +173,11 @@ input[id=icon]:checked + label > span:nth-child(3) {
   right: 0px;
 }
 
-input[id=bar] {
+input[id="bar"] {
   display: none;
 }
 
-input[id=bar] + label {
+input[id="bar"] + label {
   position: relative;
   display: block;
   width: 40px;
@@ -160,7 +186,7 @@ input[id=bar] + label {
   cursor: pointer;
 }
 
-input[id=bar] + label > span {
+input[id="bar"] + label > span {
   position: absolute;
   display: block;
   width: 100%;
@@ -199,7 +225,7 @@ input[id=bar] + label > span {
   position: absolute;
   content: "";
   display: block;
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   transition: width 300ms ease-out;
   left: 0;
   width: 0;
@@ -212,36 +238,36 @@ input[id=bar] + label > span {
 a.active::after {
   position: absolute;
   content: "";
-  border-bottom: 3px solid #AC0A00;
+  border-bottom: 3px solid #ac0a00;
   display: block;
   left: 0;
   width: 100%;
 }
 
-input[id=bar] + label > span:nth-child(1) {
+input[id="bar"] + label > span:nth-child(1) {
   top: 0px;
 }
 
-input[id=bar] + label > span:nth-child(2) {
+input[id="bar"] + label > span:nth-child(2) {
   top: 50%;
   transform: translateY(-50%);
 }
 
-input[id=bar] + label > span:nth-child(3) {
+input[id="bar"] + label > span:nth-child(3) {
   bottom: 0px;
 }
 
-input[id=bar]:checked + label > span:nth-child(1) {
+input[id="bar"]:checked + label > span:nth-child(1) {
   top: 50%;
   transform: translateY(-50%) rotate(45deg);
   background-color: rgb(255, 255, 255);
 }
 
-input[id=bar]:checked + label > span:nth-child(2) {
+input[id="bar"]:checked + label > span:nth-child(2) {
   opacity: 0;
 }
 
-input[id=bar]:checked + label > span:nth-child(3) {
+input[id="bar"]:checked + label > span:nth-child(3) {
   bottom: 50%;
   transform: translateY(50%) rotate(-45deg);
   background-color: rgb(255, 255, 255);
@@ -284,4 +310,139 @@ div.footer-box .footer-text {
 }
 div.footer-box .footer-text p {
   padding: 5px 0;
-}/*# sourceMappingURL=common.css.map */
+
+
+@media (max-width: 1024px) {
+  input[id="icon"] + label {
+    width: 35px;
+    height: 25px;
+  }
+  input[id="icon"] + label > span {
+    height: 4px;
+}
+}
+
+  
+
+
+
+}
+
+@media screen and (min-width: 1070px) and (max-width: 1145px) {
+  div.footer-box {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  div.footer-box img {
+    margin-left: 40px;
+  }
+  div.footer-box .footer-text {
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-right: 40px;
+  }
+  div.footer-box .footer-text p {
+    padding: 5px 0;
+  }
+}
+@media screen and (min-width: 800px) and (max-width: 1069px) {
+  div.footer-box {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  div.footer-box img {
+    margin: 0 auto;
+  }
+  div.footer-box .footer-text {
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div.footer-box .footer-text p {
+    padding: 5px 0;
+  }
+}
+@media screen and (min-width: 679px) and (max-width: 799px) {
+  div.footer-box {
+    width: 100%;
+    height: 250px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  div.footer-box img {
+    margin: 0 auto;
+    scale: 0.9;
+  }
+  div.footer-box .footer-text {
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+  div.footer-box .footer-text p {
+    padding: 5px 0;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 678px) {
+  div.footer-box {
+    width: 100%;
+    padding-bottom: 10%;
+    height: 100%;
+    background-color: #000;
+    display: block;
+  }
+  div.footer-box img {
+    margin: 40px 0 30px 40px;
+  }
+  div.footer-box .footer-text {
+    color: rgb(231, 231, 231);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 40px;
+  }
+  div.footer-box .footer-text p {
+    padding: 5px 0;
+  }
+  
+  input[id="icon"] + label {
+    width: 30px;
+    height: 20px;
+  }
+  input[id="icon"] + label > span {
+    height: 4px;
+}
+#header > ul > li > a {
+  font-size: 2rem;
+}
+  
+}
+
+@media (max-width: 420px) {
+  div.header-box img {
+    margin-left: 30px;
+  }
+}
+
+/*# sourceMappingURL=common.css.map */
+
