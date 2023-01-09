@@ -62,7 +62,7 @@ function Bo(m){
 
     elBook.innerHTML =  `
                         <div >
-                            <img src="../img/life/close.png" class="x">
+                            <img src="./img/life/close.png" class="x">
                         
                         </div>
                         <iframe 
