@@ -47,7 +47,6 @@ book.onclick = function(e){
         book.style.display = "none";
         elSwiper.style.zIndex = "0";
         body.style.overflow = "visible"
-        // spanz.style.zIndex = "0";
     }
 }
 
@@ -57,13 +56,11 @@ function Bo(m){
     
     book.style.display = "block";
     elSwiper.style.zIndex = "-1";
-    // spanz.style.zIndex = "-1";
     body.style.overflow = "hidden"
 
     elBook.innerHTML =  `
                         <div >
                             <img src="./img/life/close.png" class="x">
-                        
                         </div>
                         <iframe 
                             src="${bookLink[m]}" 
