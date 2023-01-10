@@ -30,7 +30,7 @@
 
 // load 
 let media = window.matchMedia('screen and (min-width:820px)');
-let mediaState = true;
+let mediaState = media.matches;
 media.addListener((e)=>{
     if(e.matches){
         //pc
