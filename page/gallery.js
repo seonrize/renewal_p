@@ -19,39 +19,49 @@
 //             elPopup.classList.remove('active');
 //         }
 // }
+// function aaafunc(){
+//     sdakaosdkasd
+// }
 
+
+// window.addEventListener('scroll', aaafunc);
+// window.removeEventListener('scroll', aaafunc);
 
 
 // load 
-let tt = 0;
-$(window).resize(function (e) {
+let media = window.matchMedia('screen and (min-width:820px)');
+let mediaState = true;
+media.addListener((e)=>{
+    if(e.matches){
+        //pc
+        mediaState = true;
+    }else{
+        //tarblet
+        mediaState = false;
+    }
+    scrollFn();
+})
+
     
-    if (window.innerWidth > 820) {  // 다바이스 크기가 #이상일때 
-        
-        tt++;
-        
-        if (tt == 1) {
-            console.log(tt);
-            const elMain = document.querySelector('main'),
-                elAside = document.querySelector('aside'),
-                elSec = document.querySelectorAll('section');
+    function scrollFn(){
+        const elMain = document.querySelector('main'),
+        elAside = document.querySelector('aside'),
+        elSec = document.querySelectorAll('section');       
+
+        if(mediaState){            
             let move = 0;
 
-            console.log(elSec)
             elSec.forEach(function (elSection, key) {
                 elAside.innerHTML += '<button></button>';
                 elSection.addEventListener('mousewheel', function () {
-                    animation(key);
-                
+                    if(mediaState) animation(key);
                 })
             })
-
 
             const elBtns = document.querySelectorAll('aside button');
             let num = 0;
             elBtns.forEach(function (btn, key) {
                 btn.addEventListener('click', function () {
-
                     animation(key)
                 })
             })
@@ -61,10 +71,11 @@ $(window).resize(function (e) {
                 elBtns[key].classList.add('active');    
                 num = key;
             }
+            update(0); 
+        
+            
 
-            update(0);  
-
-            function animation(key) {
+            function animation(key=0) {
                 try {
                     if (event.wheelDelta < 0) {
                         move = elSec[key].nextElementSibling.offsetTop;
@@ -84,14 +95,13 @@ $(window).resize(function (e) {
             }
 
             /* 스크립트내용*/
+        }else{
+            elAside.innerHTML ='';
         }
-    } else {
-        console.log("aaa");
-        /* 스크립트내용*/
-        e.stopImmediatePropagation();
-    }
 
-}).resize();
+    }
+    scrollFn();
+
 
 // 교육자료 
 
