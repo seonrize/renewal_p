@@ -31,8 +31,9 @@
 ### **Tech**
 
 <p>
-<img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black"/>
-<img src="https://img.shields.io/badge/firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=white"/>
+<img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=black"/>
+<img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
+  <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
 <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
 <br>
 </p>
@@ -40,6 +41,8 @@
 ### **Design**
 <p>
 <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=Figma&logoColor=white"/>
+  <img src="https://img.shields.io/badge/adobeillustrator-FF9A00?style=for-the-badge&logo=adobeillustrator&logoColor=white"/>
+  <img src="https://img.shields.io/badge/adobepremierepro-9999FF?style=for-the-badge&logo=adobepremierepro&logoColor=white"/>
 </p>
 
 ### **Tools**
@@ -72,7 +75,7 @@
 <summary><strong> issue3: 반응형 스크립 </strong></summary>
 
 반응형에 맞춰 스크립트를 수정하는 과정에서 새로고침 없이 마우스휠 이벤트가 제거되지 않는 이슈가 발생
--> resize()  메서드를 사용하다가 matchMedia 메소드를 사용하여 불린값으로 조건을 주어 pc와 스크린 사이즈 820 이하의 화면에서 이벤트를 다르게 
+-> resize()  메서드를 사용하다가 matchMedia 메소드를 사용하여 불린값으로 조건을 주어 pc와 스크린 사이즈 820 이하의 화면에서 이벤트를 다르게 줌
 
 </details>
 
