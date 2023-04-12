@@ -1,7 +1,7 @@
 
 # 안중근의사기념관 리뉴얼페이지
 
-![banner](https://velog.velcdn.com/images/daun/post/ef43a2d9-cb0c-4a32-b647-1a5fe566f9d3/image.png)
+![Group 2099](https://user-images.githubusercontent.com/100025580/231380909-15c92af2-17f0-4b73-a9f0-933eb6c18938.png)
 
 <br>
 
