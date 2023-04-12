@@ -35,6 +35,7 @@
 <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"/>
 <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"/>
 <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"/>
+<img src="https://img.shields.io/badge/SweetAlert2-362D59?style=for-the-badge&logo=SweetAlert2&logoColor=black">
 <br>
 </p>
 
@@ -96,4 +97,3 @@ swiper 슬라이더 안에 편지 내용을 추가하는 과정에서 class mySw
 [💾 와이어프레임](https://www.figma.com/file/Gi6e6OoQosyf3b5izSf87U/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84(%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B801)?node-id=0-1&t=5j95ophG7vyTLEPo-0)
 
 <br></br>
-dsdds
