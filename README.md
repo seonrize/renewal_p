@@ -12,28 +12,18 @@
 
 ## ☘️ 주요기능
 
-#### 🔐 firebase서버를 통한 로그인
+#### scroll 이벤트 
 
-- fairebase/auth를 사용하여 세션을 관리하였고, 구글 아이디를 통하여 로그인도 가능하도록 구현하였습니다.
+- scroll 이벤트를 사용하여 svg 이미지가 스크롤 될 때마다 그려지도 구현
+- 스크롤시에 text가 계속해서 바뀌도록 구현
 
-#### 📧 정규식
+#### 파일 다운로드 
 
-- 서버에 부하가 일어나지 않기 위해, 사용하는 데이터만 최소화 하여 가져오고 또한 정규식을 사용하여 문자들의 균일화를 해서 다듬은 데이터들을 변수로 담아 프로젝트 전역에서 사용하였습니다.
+- 안중근의사에 대한 교육자료들을 파일로 다운로드 
 
-#### ✔ 파라미터를 통한 링크 이동
-- 각 버튼을 클릭하여 해당 음식의 조리법, 해당 음식의 재료를 살 수 있는 페이지로 이동합니다.
+#### 편지쓰기
+- 이름, 내용을 적고 전송하기 버튼을 클릭하면 편지함 Swiper 안에 출력되고 출력 된 내용은 삭제 가능
 
-#### ❤️ 레시피 찜
-
-- 마음에 드는 레시피를 저장할 수 있습니다.
-
-#### 📱 재료 관리
-
-- 냉장고의 남은 재료들과 유통기한을 입력하여 관리할 수 있고, 해당 재료가 포함된 레시피를 보러 갈 수 있습니다.
-
-#### 🪄 스크롤 저장
-
-- 페이지 이동 전 위치값을 저장하여 뒤로가기 버튼 클릭 시 위치값을 기억하여 불러드립니다.
 <br>
 
 ## 🔨 기술스택
@@ -67,33 +57,39 @@
 
 ## 🔥 Trouble shooting
 <details>
-<summary><strong> issue1: 페이지 전환 시 애니메이션 및 스크롤 오류 </strong></summary>
+<summary><strong> issue1: 메인 페이지(자동 스크롤) </strong></summary>
 
-#### 🙁 situation
-
-- 메인 페이지에 있는 스크롤에 의한 애니메이션이 페이지 전환이 있고, 다시 복귀하였을 때 다시 애니메이션이 일어나지 않았다.이유는 페이지 이동을 하면서 나의 초기 스크롤 위치를 설정해주는 함수가 작동하지 않아서 였다.
-
-#### 🚥 solution
-
-- useLocation을 이용하여 페이지가 재할당 되었을 시 함수를 다시 실행하게 하여, 문제 없이 사용 할 수 있었다.
+페이지 실행 시 자동으로 스크롤되게하려고 setinterval 함수를 사용했었지만 해결되지않아 setinterval안에서 if문추가로 해결
 </details>
+
 <details>
-<summary><strong> issue2: 배포 환경 </strong></summary>
+<summary><strong> issue2: 배포후 링크연결 </strong></summary>
 
-#### 🙁 situation
-
-- 리엑트는 오로지 js형식으로 만들어지기 때문에, 그냥 작성한 코드만을 올리면 배포가 되지 않았던 걸 몰랐다. 찾아본 결과 컴파일 작업이 필요하다는 것을 알게 되었다.
-
-#### 🚥 solution
-
-- 빌드하는 과정에 대해 공부하여 컴파일 하였고, 변환한 html로 깃허브 레파지토리에 업로드 하였다.
+깃허브로 배포 했더니 iframe속의 url이 연결되지않아 외부도메인을 이용해 배포
 </details>
+
+<details>
+<summary><strong> issue3: 반응형 스크립 </strong></summary>
+
+반응형에 맞춰 스크립트를 수정하는 과정에서 새로고침 없이 마우스휠 이벤트가 제거되지 않는 이슈가 발생
+-> resize()  메서드를 사용하다가 matchMedia 메소드를 사용하여 불린값으로 조건을 주어 pc와 스크린 사이즈 820 이하의 화면에서 이벤트를 다르게 
+
+</details>
+
+<details>
+<summary><strong> issue4: class 적용 </strong></summary>
+
+swiper 슬라이더 안에 편지 내용을 추가하는 과정에서 class mySwiper가 적용되지 않는 이슈가 발생하여 swiper를 함수로 묶
+어 편지를 추가시킬때마다 실행되도록 하여 문제 해결.
+</details>
+
+
 
 
 
 <br></br>
 ## 🌸 와이어프레임
 
-[💾 와이어프레임](https://www.figma.com/file/CDKNOSVNT8V3OlYs3LGKxf/%EB%83%89%EC%9E%A5%EA%B3%A0?node-id=0-1&t=sGMlded8uHaRp1ZE-0)
+[💾 와이어프레임](https://www.figma.com/file/Gi6e6OoQosyf3b5izSf87U/%EC%99%80%EC%9D%B4%EC%96%B4%ED%94%84%EB%A0%88%EC%9E%84(%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B801)?node-id=0-1&t=5j95ophG7vyTLEPo-0)
 
 <br></br>
